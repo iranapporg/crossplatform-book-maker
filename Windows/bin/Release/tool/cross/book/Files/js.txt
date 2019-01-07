@@ -1,0 +1,186 @@
+<html>
+
+	<style>
+		@font-face {
+			font-family: myfont;src: url({url});
+					}
+		a {
+			color:#e4d52c;
+			font-weight:bold;
+			text-decoration:none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
+	
+	<script src="{url_js}"></script>
+	<script>
+		$(document).ready(function(e) {
+			
+		});
+	</script>
+	
+	<body>
+		<p id="pis" style="padding:10px;font-size:40px;direction:rtl;text-align:justify;text-justify:auto;line-height:30px;font-family:myfont,tahoma;">
+		{content}
+		</p>
+	</body>
+	
+	<script>
+		
+		function jump(id) {
+			$('html, body').animate({
+				scrollTop: $("a[href=" + id + "]").offset().top
+			}, 2000);
+		}
+		
+		function highlight_keyword(word) {
+			var src_str = $("#pis").html();
+			var term = word;
+			term = term.replace(/(\s+)/,"(<[^>]+>)*$1(<[^>]+>)*");
+			var pattern = new RegExp("("+term+")", "gi");
+
+			src_str = src_str.replace(pattern, "<mark>$1</mark>");
+			src_str = src_str.replace(/(<mark>[^<>]*)((<[^>]+>)+)([^<>]*<\/mark>)/,"$1</mark>$2<mark>$4");
+			$("#pis").html(src_str);
+		}
+		
+		function removeLink(id) {
+			$("a[href=" + id + "]").replaceWith($("a[href=" + id + "]").text());
+		}
+			
+		function getSelectionHtml() {
+			var html = "";
+			if (typeof window.getSelection != "undefined") {
+				var sel = window.getSelection();
+				if (sel.rangeCount) {
+					var container = document.createElement("div");
+					for (var i = 0, len = sel.rangeCount; i < len; ++i) {
+						container.appendChild(sel.getRangeAt(i).cloneContents());
+					}
+					html = container.innerHTML;
+				}
+			} else if (typeof document.selection != "undefined") {
+				if (document.selection.type == "Text") {
+					html = document.selection.createRange().htmlText;
+				}
+			}
+			return html;
+		}
+		
+		function replaceString(str) {
+			var r = "<a data-id=\"note\" data-desc=\"ssssssss\" href=\"#\">" + str + "</a>";
+			var t = document.getElementById("pis").innerHTML;
+			t = t.replace(str,r);
+			document.getElementById("pis").innerHTML = t;
+		}
+		
+		function makeEditableAndHighlight(colour) {
+			sel = window.getSelection();
+			if (sel.rangeCount && sel.getRangeAt) {
+				range = sel.getRangeAt(0);
+			}
+			document.designMode = "on";
+			if (range) {
+				sel.removeAllRanges();
+				sel.addRange(range);
+			}
+			// Use HiliteColor since some browsers apply BackColor to the whole block
+			if (!document.execCommand("HiliteColor", false, colour)) {
+				document.execCommand("BackColor", false, colour);
+			}
+			document.designMode = "off";
+		}
+
+		function highlight(colour) {
+			var range, sel;
+			if (window.getSelection) {
+				// IE9 and non-IE
+				try {
+					if (!document.execCommand("BackColor", false, colour)) {
+						makeEditableAndHighlight(colour);
+					}
+				} catch (ex) {
+					makeEditableAndHighlight(colour)
+				}
+			} else if (document.selection && document.selection.createRange) {
+				// IE <= 8 case
+				range = document.selection.createRange();
+				range.execCommand("BackColor", false, colour);
+			}
+		}
+		
+	function makeEditableAndLink(desc) {
+		sel = window.getSelection();
+		if (sel.rangeCount && sel.getRangeAt) {
+			range = sel.getRangeAt(0);
+		}
+		document.designMode = "on";
+		if (range) {
+			sel.removeAllRanges();
+			sel.addRange(range);
+		}
+		// Use HiliteColor since some browsers apply BackColor to the whole block
+		if (!document.execCommand("CreateLink", false,desc)) {
+			document.execCommand("CreateLink", false,desc);
+		}
+		document.designMode = "off";
+	}
+
+	function AddLink(link) {
+		var range, sel;
+		if (window.getSelection) {
+			// IE9 and non-IE
+			try {
+				if (!document.execCommand("CreateLink", false, link)) {
+					makeEditableAndLink(link);
+				}
+			} catch (ex) {
+				makeEditableAndLink(link)
+			}
+		} else if (document.selection && document.selection.createRange) {
+			// IE <= 8 case
+			range = document.selection.createRange();
+			range.execCommand("CreateLink", false,link);
+		}
+	}
+	
+	function makeEditableAndBookmark(desc) {
+		sel = window.getSelection();
+		if (sel.rangeCount && sel.getRangeAt) {
+			range = sel.getRangeAt(0);
+		}
+		document.designMode = "on";
+		if (range) {
+			sel.removeAllRanges();
+			sel.addRange(range);
+		}
+		// Use HiliteColor since some browsers apply BackColor to the whole block
+		if (!document.execCommand("CreateLink", false,desc)) {
+			document.execCommand("CreateLink", false,desc);
+		}
+		document.designMode = "off";
+	}
+
+	function AddBookmark(link) {
+		var range, sel;
+		if (window.getSelection) {
+			// IE9 and non-IE
+			try {
+				if (!document.execCommand("CreateLink", false, link)) {
+					makeEditableAndBookmark(link);
+				}
+			} catch (ex) {
+				makeEditableAndBookmark(link)
+			}
+		} else if (document.selection && document.selection.createRange) {
+			// IE <= 8 case
+			range = document.selection.createRange();
+			range.execCommand("CreateLink", false,link);
+		}
+	}
+	
+	</script>
+	
+</html>

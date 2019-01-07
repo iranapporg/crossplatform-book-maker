@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8987239B-758C-44D7-B957-794F5B81C1F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Remote_Computer</RootNamespace>
+    <AssemblyName>BookMaker</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+    <SignManifests>true</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ManifestCertificateThumbprint>F902727743038AA1928A09954EB9809F7F4368EC</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>Remote_Computer.Program</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Words, Version=9.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="ChilkatDotNet2, Version=9.5.0.0, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.Data.v6.3, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraWizard.v6.3, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.HtmlPropertyEditor.Win.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Dariush\Desktop\Bahonar\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Book.Designer.cs">
+      <DependentUpon>Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsProject.cs" />
+    <Compile Include="frmfooter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfooter.Designer.cs">
+      <DependentUpon>frmfooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmios.Designer.cs">
+      <DependentUpon>frmios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db.cs" />
+    <Compile Include="frmEditApk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditApk.Designer.cs">
+      <DependentUpon>frmEditApk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminput.Designer.cs">
+      <DependentUpon>frminput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJava.Designer.cs">
+      <DependentUpon>frmJava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlanguage.Designer.cs">
+      <DependentUpon>frmlanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlist.Designer.cs">
+      <DependentUpon>frmlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmain.Designer.cs">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpicture.Designer.cs">
+      <DependentUpon>frmpicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmplatform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmplatform.Designer.cs">
+      <DependentUpon>frmplatform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmToast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmToast.Designer.cs">
+      <DependentUpon>frmToast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmvideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmvideo.Designer.cs">
+      <DependentUpon>frmvideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTP.cs" />
+    <Compile Include="myClass.cs" />
+    <Compile Include="PDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDS.Designer.cs">
+      <DependentUpon>PDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Book.resx">
+      <DependentUpon>Book.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfooter.resx">
+      <DependentUpon>frmfooter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmios.resx">
+      <DependentUpon>frmios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditApk.resx">
+      <DependentUpon>frmEditApk.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminput.resx">
+      <DependentUpon>frminput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJava.resx">
+      <DependentUpon>frmJava.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlanguage.resx">
+      <DependentUpon>frmlanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlist.resx">
+      <DependentUpon>frmlist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpicture.resx">
+      <DependentUpon>frmpicture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmplatform.resx">
+      <DependentUpon>frmplatform.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmToast.resx">
+      <DependentUpon>frmToast.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmvideo.resx">
+      <DependentUpon>frmvideo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDS.resx">
+      <DependentUpon>PDS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseTemplate.resx">
+      <DependentUpon>PurchaseTemplate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template.resx">
+      <DependentUpon>Template.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemplateInformation.resx">
+      <DependentUpon>TemplateInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\AudioItem.resx">
+      <DependentUpon>AudioItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\FileItem.resx">
+      <DependentUpon>FileItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\FontItem.resx">
+      <DependentUpon>FontItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\VideoItem.resx">
+      <DependentUpon>VideoItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\PictureItem.resx">
+      <DependentUpon>PictureItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMessages.resx">
+      <DependentUpon>UserMessages.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PurchaseTemplate.Designer.cs">
+      <DependentUpon>PurchaseTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Template.Designer.cs">
+      <DependentUpon>Template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemplateInformation.Designer.cs">
+      <DependentUpon>TemplateInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateItem.cs" />
+    <Compile Include="Temp\AudioItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Temp\AudioItem.Designer.cs">
+      <DependentUpon>AudioItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\FileItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Temp\FileItem.Designer.cs">
+      <DependentUpon>FileItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\FontItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Temp\FontItem.Designer.cs">
+      <DependentUpon>FontItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\VideoItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Temp\VideoItem.Designer.cs">
+      <DependentUpon>VideoItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\PictureItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Temp\PictureItem.Designer.cs">
+      <DependentUpon>PictureItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMessages.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserMessages.Designer.cs">
+      <DependentUpon>UserMessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZipUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.ico" />
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="ico.ico" />
+    <None Include="Resources\Android Field Book App.png" />
+    <None Include="Resources\android-reading-1-100531598-primary.idge.png" />
+    <None Include="Resources\android_4096_black.png" />
+    <None Include="Resources\apple-4096-black.png" />
+    <None Include="Resources\apple-4096-black1.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\amar.png" />
+    <None Include="Resources\download %281%29.jpg" />
+    <None Include="Resources\download2.png" />
+    <None Include="Resources\bracket.png" />
+    <None Include="Resources\bracket1.png" />
+    <None Include="Resources\file32.png" />
+    <None Include="Resources\favoris.png" />
+    <None Include="Resources\favoris1.png" />
+    <None Include="Resources\down1.png" />
+    <None Include="Resources\android1.png" />
+    <None Include="Resources\apple1.png" />
+    <None Include="Resources\android2.png" />
+    <None Include="Resources\apple2.png" />
+    <None Include="Resources\ads.gif" />
+    <None Include="Resources\apple3.png" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\Book-Library-UI-Kit.png" />
+    <None Include="Resources\cover.jpg" />
+    <Content Include="Resources\Good2.png" />
+    <None Include="Resources\mahak_chareity.png" />
+    <None Include="Resources\logo1.jpg" />
+    <None Include="Resources\InProgress.gif" />
+    <None Include="Resources\level.JPG" />
+    <None Include="Resources\linux.png" />
+    <None Include="Resources\icon.png" />
+    <None Include="Resources\max.gif" />
+    <None Include="Resources\min.gif" />
+    <None Include="Resources\rename.PNG" />
+    <None Include="Resources\new1.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\op.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\product.png" />
+    <None Include="Resources\report1.PNG" />
+    <None Include="Resources\rtl.PNG" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\linux1.png" />
+    <None Include="Resources\linux_circle1.png" />
+    <None Include="Resources\mahak_chareity1.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\No_picture_available.png" />
+    <None Include="Resources\loading_anim.gif" />
+    <None Include="Resources\spinner.gif" />
+    <None Include="Resources\replace1.png" />
+    <None Include="Resources\mac_client.png" />
+    <None Include="Resources\spinner1.gif" />
+    <Content Include="Resources\title.jpg" />
+    <None Include="Resources\title2.jpg" />
+    <None Include="Resources\windows1.png" />
+    <None Include="Resources\up1.png" />
+    <None Include="Resources\word1.png" />
+    <None Include="Resources\vella.png" />
+    <None Include="Resources\windows-icon-614x460.png" />
+    <None Include="Resources\toast.png" />
+    <None Include="Resources\title1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

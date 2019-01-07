@@ -1,0 +1,365 @@
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\BookMaker.exe.config
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\BookMaker.exe
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\BookMaker.pdb
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\Aspose.Words.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Data.v10.1.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.Data.v6.3.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.Utils.v6.3.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.XtraWizard.v6.3.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v10.1.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.v10.1.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.Win.v10.1.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Utils.v10.1.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraBars.v10.1.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraEditors.v10.1.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraNavBar.v10.1.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraWizard.v10.1.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\Ionic.Zip.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\Microsoft.mshtml.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\System.Data.SQLite.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.Win.v10.1.xml
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraWizard.v10.1.xml
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraEditors.v10.1.xml
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraBars.v10.1.xml
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Utils.v10.1.xml
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\System.Data.SQLite.xml
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraNavBar.v10.1.xml
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Data.v10.1.xml
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.v10.1.xml
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\ResolveAssemblyReference.cache
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.AboutBox1.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmcontact.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frminput.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmJava.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmlist.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmmain.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmpicture.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmplatform.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmToast.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.Properties.Resources.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.PurchaseTemplate.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.Template.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.TemplateInformation.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote Computer.csproj.GenerateResource.Cache
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\BookMaker.exe.licenses
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\BookMaker.exe
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\BookMaker.pdb
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.PDS.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\BookMaker.exe.config
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\BookMaker.exe
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\BookMaker.pdb
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\ResolveAssemblyReference.cache
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.AboutBox1.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmcontact.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frminput.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmJava.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmlist.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmmain.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmpicture.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmplatform.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmToast.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.PDS.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.Properties.Resources.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.PurchaseTemplate.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.Template.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.TemplateInformation.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote Computer.csproj.GenerateResource.Cache
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\BookMaker.exe.licenses
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\BookMaker.exe
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\BookMaker.pdb
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\Aspose.Words.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\AxInterop.WMPLib.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Data.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.Data.v6.3.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.Utils.v6.3.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.XtraWizard.v6.3.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.Win.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Utils.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraBars.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraEditors.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraNavBar.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraWizard.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\Interop.WMPLib.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\Ionic.Zip.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\Microsoft.mshtml.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\System.Data.SQLite.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.Win.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraWizard.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraEditors.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraBars.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Utils.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\System.Data.SQLite.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraNavBar.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Data.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.v10.1.xml
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmEditApk.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.PictureItem.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Interop.WMPLib.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote Computer.csproj.ResolveComReference.cache
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.AudioItem.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\bin\Release\Interop.WMPLib.dll
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.VideoItem.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.FontItem.resources
+\\psf\Home\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.FileItem.resources
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\BookMaker.exe.config
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Interop.WMPLib.dll
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote Computer.csproj.ResolveComReference.cache
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\BookMaker.exe
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\BookMaker.pdb
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\BookMaker.exe
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\BookMaker.pdb
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\Aspose.Words.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Data.v10.1.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.Data.v6.3.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.Utils.v6.3.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.DXCore.Controls.XtraWizard.v6.3.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v10.1.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.v10.1.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.Win.v10.1.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Utils.v10.1.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraBars.v10.1.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraEditors.v10.1.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraNavBar.v10.1.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraWizard.v10.1.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\Ionic.Zip.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\Microsoft.mshtml.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\System.Data.SQLite.dll
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.Win.v10.1.xml
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraWizard.v10.1.xml
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraEditors.v10.1.xml
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraBars.v10.1.xml
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Utils.v10.1.xml
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\System.Data.SQLite.xml
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.XtraNavBar.v10.1.xml
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.Data.v10.1.xml
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\DevExpress.ExpressApp.v10.1.xml
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\Interop.WMPLib.dll
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\ResolveAssemblyReference.cache
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.AboutBox1.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmcontact.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmEditApk.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frminput.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmJava.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmlist.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmmain.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmpicture.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmplatform.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmToast.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.PDS.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.Properties.Resources.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.PurchaseTemplate.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.Template.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.TemplateInformation.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.AudioItem.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.FileItem.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.FontItem.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.VideoItem.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.PictureItem.resources
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote Computer.csproj.GenerateResource.Cache
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\BookMaker.exe.licenses
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmregister.resources
+X:\Programming\C#\Android Bookmaker\C#\bin\Release\AxInterop.WMPLib.dll
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\AxInterop.WMPLib.dll
+X:\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmvideo.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Interop.WMPLib.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\AxInterop.WMPLib.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote Computer.csproj.ResolveComReference.cache
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmEditApk.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmregister.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmvideo.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.AudioItem.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.FileItem.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.FontItem.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.VideoItem.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.PictureItem.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Android Bookmaker\C#\obj\Release\Remote_Computer.frmios.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\BookMaker.exe.config
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Interop.WMPLib.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\AxInterop.WMPLib.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote Computer.csproj.ResolveComReference.cache
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\BookMaker.exe
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\BookMaker.pdb
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\ResolveAssemblyReference.cache
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.AboutBox1.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frmios.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frmcontact.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frmEditApk.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frminput.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frmJava.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frmlist.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frmmain.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frmpicture.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frmplatform.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frmToast.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.frmvideo.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.PDS.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.Properties.Resources.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.PurchaseTemplate.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.Template.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.TemplateInformation.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.AudioItem.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.FileItem.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.FontItem.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.VideoItem.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote_Computer.PictureItem.resources
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\Remote Computer.csproj.GenerateResource.Cache
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\obj\Release\BookMaker.exe.licenses
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\BookMaker.exe
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\BookMaker.pdb
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\Aspose.Words.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.Data.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.DXCore.Controls.Data.v6.3.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.DXCore.Controls.Utils.v6.3.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.DXCore.Controls.XtraWizard.v6.3.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.ExpressApp.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.ExpressApp.Win.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.Utils.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.XtraBars.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.XtraEditors.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.XtraNavBar.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.XtraWizard.v10.1.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\Ionic.Zip.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\Microsoft.mshtml.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\System.Data.SQLite.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.ExpressApp.Win.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.XtraWizard.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.XtraEditors.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.XtraBars.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.Utils.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\System.Data.SQLite.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.XtraNavBar.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.Data.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\DevExpress.ExpressApp.v10.1.xml
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\Interop.WMPLib.dll
+Y:\Documents\My Tools\Current Project\Programming\C#\Bahonar\C#\bin\Release\AxInterop.WMPLib.dll
+W:\bahonar\Windows\bin\Release\BookMaker.exe.config
+W:\bahonar\Windows\obj\Release\Interop.WMPLib.dll
+W:\bahonar\Windows\obj\Release\AxInterop.WMPLib.dll
+W:\bahonar\Windows\obj\Release\Remote Computer.csproj.ResolveComReference.cache
+W:\bahonar\Windows\obj\Release\BookMaker.exe
+W:\bahonar\Windows\obj\Release\BookMaker.pdb
+W:\bahonar\Windows\obj\Release\ResolveAssemblyReference.cache
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmios.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmEditApk.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.frminput.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmJava.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmlist.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmmain.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmpicture.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmplatform.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmToast.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmvideo.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.PDS.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.Properties.Resources.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.PurchaseTemplate.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.Template.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.TemplateInformation.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.AudioItem.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.FileItem.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.FontItem.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.VideoItem.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.PictureItem.resources
+W:\bahonar\Windows\obj\Release\Remote Computer.csproj.GenerateResource.Cache
+W:\bahonar\Windows\obj\Release\BookMaker.exe.licenses
+W:\bahonar\Windows\bin\Release\BookMaker.exe
+W:\bahonar\Windows\bin\Release\BookMaker.pdb
+W:\bahonar\Windows\bin\Release\DevExpress.Data.v10.1.dll
+W:\bahonar\Windows\bin\Release\DevExpress.DXCore.Controls.Data.v6.3.dll
+W:\bahonar\Windows\bin\Release\DevExpress.DXCore.Controls.Utils.v6.3.dll
+W:\bahonar\Windows\bin\Release\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll
+W:\bahonar\Windows\bin\Release\DevExpress.DXCore.Controls.XtraWizard.v6.3.dll
+W:\bahonar\Windows\bin\Release\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v10.1.dll
+W:\bahonar\Windows\bin\Release\DevExpress.ExpressApp.v10.1.dll
+W:\bahonar\Windows\bin\Release\DevExpress.ExpressApp.Win.v10.1.dll
+W:\bahonar\Windows\bin\Release\DevExpress.Utils.v10.1.dll
+W:\bahonar\Windows\bin\Release\DevExpress.XtraBars.v10.1.dll
+W:\bahonar\Windows\bin\Release\DevExpress.XtraEditors.v10.1.dll
+W:\bahonar\Windows\bin\Release\DevExpress.XtraNavBar.v10.1.dll
+W:\bahonar\Windows\bin\Release\DevExpress.XtraWizard.v10.1.dll
+W:\bahonar\Windows\bin\Release\Microsoft.mshtml.dll
+W:\bahonar\Windows\bin\Release\DevExpress.ExpressApp.Win.v10.1.xml
+W:\bahonar\Windows\bin\Release\DevExpress.XtraWizard.v10.1.xml
+W:\bahonar\Windows\bin\Release\DevExpress.XtraEditors.v10.1.xml
+W:\bahonar\Windows\bin\Release\DevExpress.XtraBars.v10.1.xml
+W:\bahonar\Windows\bin\Release\DevExpress.Utils.v10.1.xml
+W:\bahonar\Windows\bin\Release\System.Data.SQLite.xml
+W:\bahonar\Windows\bin\Release\DevExpress.XtraNavBar.v10.1.xml
+W:\bahonar\Windows\bin\Release\DevExpress.Data.v10.1.xml
+W:\bahonar\Windows\bin\Release\DevExpress.ExpressApp.v10.1.xml
+W:\bahonar\Windows\bin\Release\Interop.WMPLib.dll
+W:\bahonar\Windows\bin\Release\AxInterop.WMPLib.dll
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmfooter.resources
+W:\bahonar\Windows\bin\Release\Newtonsoft.Json.pdb
+W:\bahonar\Windows\bin\Release\Newtonsoft.Json.xml
+W:\bahonar\Windows\obj\Release\Remote_Computer.UserMessages.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.Book.resources
+W:\bahonar\Windows\obj\Release\Remote_Computer.frmlanguage.resources
+W:\bahonar\Platform\BookMaker\bin\Release\BookMaker.exe.config
+W:\bahonar\Platform\BookMaker\obj\Release\Interop.WMPLib.dll
+W:\bahonar\Platform\BookMaker\obj\Release\AxInterop.WMPLib.dll
+W:\bahonar\Platform\BookMaker\obj\Release\Remote Computer.csproj.ResolveComReference.cache
+W:\bahonar\Platform\BookMaker\obj\Release\BookMaker.exe
+W:\bahonar\Platform\BookMaker\obj\Release\BookMaker.pdb
+W:\bahonar\Platform\BookMaker\bin\Release\BookMaker.exe
+W:\bahonar\Platform\BookMaker\bin\Release\BookMaker.pdb
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.Data.v10.1.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.DXCore.Controls.Data.v6.3.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.DXCore.Controls.Utils.v6.3.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.DXCore.Controls.XtraWizard.v6.3.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v10.1.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.ExpressApp.v10.1.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.ExpressApp.Win.v10.1.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.Utils.v10.1.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.XtraBars.v10.1.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.XtraEditors.v10.1.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.XtraNavBar.v10.1.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.XtraWizard.v10.1.dll
+W:\bahonar\Platform\BookMaker\bin\Release\Microsoft.mshtml.dll
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.ExpressApp.Win.v10.1.xml
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.XtraWizard.v10.1.xml
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.XtraEditors.v10.1.xml
+W:\bahonar\Platform\BookMaker\bin\Release\Newtonsoft.Json.pdb
+W:\bahonar\Platform\BookMaker\bin\Release\Newtonsoft.Json.xml
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.XtraBars.v10.1.xml
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.Utils.v10.1.xml
+W:\bahonar\Platform\BookMaker\bin\Release\System.Data.SQLite.xml
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.XtraNavBar.v10.1.xml
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.Data.v10.1.xml
+W:\bahonar\Platform\BookMaker\bin\Release\DevExpress.ExpressApp.v10.1.xml
+W:\bahonar\Platform\BookMaker\bin\Release\Interop.WMPLib.dll
+W:\bahonar\Platform\BookMaker\bin\Release\AxInterop.WMPLib.dll
+W:\bahonar\Platform\BookMaker\obj\Release\ResolveAssemblyReference.cache
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.Book.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmfooter.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmios.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmEditApk.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frminput.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmJava.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmlanguage.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmlist.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmmain.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmpicture.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmplatform.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmToast.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.frmvideo.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.PDS.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.Properties.Resources.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.PurchaseTemplate.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.Template.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.TemplateInformation.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.AudioItem.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.FileItem.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.FontItem.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.VideoItem.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.PictureItem.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote_Computer.UserMessages.resources
+W:\bahonar\Platform\BookMaker\obj\Release\Remote Computer.csproj.GenerateResource.Cache
+W:\bahonar\Platform\BookMaker\obj\Release\BookMaker.exe.licenses

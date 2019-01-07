@@ -1,0 +1,153 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Remote_Computer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="nAbout" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">درباره ما</Value>
+    </Setting>
+    <Setting Name="tabSystem" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1- کتاب</Value>
+    </Setting>
+    <Setting Name="tabContent" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2- محتوای</Value>
+    </Setting>
+    <Setting Name="tabUI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3- ظاهر کتاب</Value>
+    </Setting>
+    <Setting Name="tabUI4" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ظاهر کتاب - 4</Value>
+    </Setting>
+    <Setting Name="tabProduct" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">5- محصولات</Value>
+    </Setting>
+    <Setting Name="tabHelpbook" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">6- متفرقه</Value>
+    </Setting>
+    <Setting Name="tabSetting" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">تنظیمات</Value>
+    </Setting>
+    <Setting Name="Title" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">کتاب ساز اندروید</Value>
+    </Setting>
+    <Setting Name="notice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">توجه :</Value>
+    </Setting>
+    <Setting Name="NoticeEdit" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">سیشسیشسی</Value>
+    </Setting>
+    <Setting Name="ProjectName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">لطفا نوع پلتفرم را برای ساخت کتاب انتخاب کنید :</Value>
+    </Setting>
+    <Setting Name="bookName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">نام / عنوان کتاب :</Value>
+    </Setting>
+    <Setting Name="authorname" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">نام تهیه کننده کتاب :</Value>
+    </Setting>
+    <Setting Name="bookcontent" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">محتوای کتاب :</Value>
+    </Setting>
+    <Setting Name="bookversion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">نسخه کتاب :</Value>
+    </Setting>
+    <Setting Name="versionNotice" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">عدد اول به عنوان نسخه اصلی خواهد بود - نمونه 3.0.1</Value>
+    </Setting>
+    <Setting Name="GridMenu" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">جدولی</Value>
+    </Setting>
+    <Setting Name="ArcMenu" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">دایره ای</Value>
+    </Setting>
+    <Setting Name="tableTypeNotice" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">کدام منوها باشند؟</Value>
+    </Setting>
+    <Setting Name="BookIcon" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">آیکون کتاب :</Value>
+    </Setting>
+    <Setting Name="IconNotice" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">آیکون باید با فرمت png باشد و اندازه ی آن نباید کمتر از 64x64 پیکسل باشد</Value>
+    </Setting>
+    <Setting Name="select" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">انتخاب</Value>
+    </Setting>
+    <Setting Name="bgSound" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">آهنگ زمینه :</Value>
+    </Setting>
+    <Setting Name="bgSoundNotice" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">حداکثر 700 کیلوبایت باشد </Value>
+    </Setting>
+    <Setting Name="clickSoundRemove" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">حذف صدای کلیک بر روی گزینه ها</Value>
+    </Setting>
+    <Setting Name="Contact" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">مشخصات تماس</Value>
+    </Setting>
+    <Setting Name="Website" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">آدرس وب سایت - بروز رسانی کتاب :</Value>
+    </Setting>
+    <Setting Name="Email" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">آدرس پست الکترونیکی :</Value>
+    </Setting>
+    <Setting Name="Phone" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">شماره تماس :</Value>
+    </Setting>
+    <Setting Name="SaveProject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ذخیره پروژه</Value>
+    </Setting>
+    <Setting Name="ProjectSection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">                                بخش پروژه  </Value>
+    </Setting>
+    <Setting Name="NewProject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">                           پروژه جدید</Value>
+    </Setting>
+    <Setting Name="openProject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">                    باز کردن پروژه</Value>
+    </Setting>
+    <Setting Name="deleteProject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">                    حذف این پروژه</Value>
+    </Setting>
+    <Setting Name="duplicateProject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">            پشتیبان گیری</Value>
+    </Setting>
+    <Setting Name="newChapter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">            دسته بندی جدید</Value>
+    </Setting>
+    <Setting Name="sectionOutput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">                             بخش خروجی</Value>
+    </Setting>
+    <Setting Name="previewBook" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">       پیش نمایش کتاب</Value>
+    </Setting>
+    <Setting Name="demoBook" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">            نسخه دموی کتاب</Value>
+    </Setting>
+    <Setting Name="primaryBook" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">         نسخه اصلی کتاب</Value>
+    </Setting>
+    <Setting Name="sectionSoftware" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">                     بخش نرم افزاری</Value>
+    </Setting>
+    <Setting Name="settingmenu" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">                             تنظیمات</Value>
+    </Setting>
+    <Setting Name="help" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">                  راهنمای برنامه</Value>
+    </Setting>
+    <Setting Name="mnucontacts" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">                        ارتباط با ما</Value>
+    </Setting>
+    <Setting Name="mnuexit" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">                 خروج از نرم افزار</Value>
+    </Setting>
+    <Setting Name="menus" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ListMenu" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">لیستی</Value>
+    </Setting>
+    <Setting Name="MenuType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">نمایش منوی صفحه اصلی</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

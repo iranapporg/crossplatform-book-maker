@@ -1,0 +1,803 @@
+﻿Version=4.01
+AppType=JavaFX
+NumberOfModules=19
+Module1=actBookMenu
+Module2=actContent
+Module3=Loading
+Module4=actDownload
+Module5=Database
+Module6=actSiteSocial
+Module7=Library
+Module8=Categories
+Module9=actMessage
+Module10=actSendPoint
+Module11=actPoints
+Module12=actAbout
+Module13=actContact
+Module14=DBUtils
+Module15=ImageDownloader
+Module16=actBookInformation
+Module17=BaseInformationApp
+Module18=actSetting
+Module19=actSearchBook
+Build1=Default,b4j.example
+NumberOfFiles=45
+File1=back.png
+File2=bn.ttf
+File3=bookmark.png
+File4=books.db
+File5=byekan.ttf
+File6=category.db
+File7=frmabout.bjl
+File8=frmbook_menu.bjl
+File9=frmbook_template.bjl
+File10=frmbookinformation.bjl
+File11=frmbookmark.bjl
+File12=frmchapters.bjl
+File13=frmcontact.bjl
+File14=frmcontent.bjl
+File15=frmdownloadbook.bjl
+File16=frmdownloads.bjl
+File17=frmhighlight.bjl
+File18=frmitembook.bjl
+File19=frmlastvisit.bjl
+File20=frmlist_site_social.bjl
+File21=frmlistpoints.bjl
+File22=frmloading.bjl
+File23=frmmain.bjl
+File24=frmmenu.bjl
+File25=frmmessage.bjl
+File26=frmnote.bjl
+File27=frmpoints.bjl
+File28=frmsearchbook.bjl
+File29=frmsearchinbook.bjl
+File30=frmsendpoint.bjl
+File31=frmsetting.bjl
+File32=frmsummary.bjl
+File33=frmtemplate_book_item.bjl
+File34=frmtemplate_box.bjl
+File35=frmtemplate_category.bjl
+File36=frmtemplate_search_booklist.bjl
+File37=highlight.png
+File38=icomoon.ttf
+File39=jquery.js
+File40=js.txt
+File41=net.png
+File42=note.png
+File43=ok.png
+File44=social.png
+File45=tahoma.ttf
+NumberOfLibraries=11
+Library1=jcore
+Library2=jfx
+Library3=jhttputils2
+Library4=jsql
+Library5=byteconverter
+Library6=json
+Library7=abzipunzip
+Library8=jslpreferences
+Library9=jrldialogs8
+Library10=javaobject
+Library11=jscriptengine
+@EndOfDesignText@
+#Region  Project Attributes 
+	#MainFormWidth: 470
+	#MainFormHeight: 594
+	#AdditionalJar: sqlite-jdbc-3.7.2
+#End Region
+
+Sub Process_Globals
+	Private loading As Loading
+	Public fx As JFX
+	Public MainForm As Form
+	Private tab1 As TabPane
+	Private lvbooks As ListView
+	Private img1 As ImageView
+	Private img2 As ImageView
+	Private img3 As ImageView
+	Private pnlitem As Pane
+	Private listTopBook As List
+	Private topMainPage As Int
+	Private lvdownloads As ListView
+	Private MenuBar1 As MenuBar
+	Private btndeletebook1 As Button
+	Private btndeletebook2 As Button
+	Private btndeletebook3 As Button
+End Sub
+
+Sub AppStart (Form1 As Form, Args() As String)
+	
+	MainForm = Form1
+	MainForm.SetFormStyle("UNIFIED")
+	MainForm.Title = "کتابخانه"
+	MainForm.RootPane.LoadLayout("frmmain")
+	MainForm.Resizable = False
+	Library.CenterFormOnScreen(MainForm)
+	
+	File.MakeDir(File.DirApp,"Data")
+	
+	loading.Initialize(MainForm)
+	
+	Dim mnu As MenuItem
+	mnu = MenuBar1.Menus.Get(1)
+	mnu.Enabled = False
+	
+	Library.Manager.Initialize
+	tab1.LoadLayout("frmlastvisit","آخرین کتاب های خوانده شده")
+	tab1.LoadLayout("frmdownloads","کتاب های دانلود شده").Tag = "download"
+	
+	Try
+		Dim hu As HttpJob
+		hu.Initialize("book",Me)
+		hu.PostString(Library.URL & "top_book","")
+	Catch
+	End Try
+	
+	ExtractOfflineBook
+	LoadItem
+	
+	MainForm.Show
+	
+	CheckUpdateLibrary
+	
+End Sub
+
+Sub CheckUpdateLibrary
+	Dim hu As HttpJob
+	hu.Initialize("bookcount",Me)
+	hu.PostString(Library.URL & "count_book","")	
+End Sub
+
+Sub LoadItem
+	Downloads("","")
+	LastVisit
+End Sub
+
+Sub mnulibrary_Action
+	actDownload.ShowDownload	
+End Sub
+
+Sub ExtractOfflineBook
+	
+	If Library.Manager.GetBoolean("offline",False) = True Then Return
+	
+	Try
+		Dim res,books As List
+		res = File.ReadList(File.DirAssets,"default.txt")
+	Catch
+		Return
+	End Try
+	
+	MainForm.RootPane.Enabled = False
+	
+	Library.Manager.PutBoolean("offline",True)
+	
+	Try
+		File.ReadString(File.DirAssets,"default.ttf")
+		Library.Manager.PutString("font","default.ttf")
+	Catch
+		Library.Manager.PutString("font","bn.ttf")
+	End Try
+
+	books.Initialize
+	
+	For i = 0 To res.Size - 1
+		Dim rs() As String
+		rs = Regex.Split("<>",res.Get(i))
+		
+		Dim temp As Map
+		temp.Initialize
+		
+		temp.Put("sID",rs(0))
+		temp.Put("sCategoryID",rs(1))
+		temp.Put("sTitle",rs(2))
+		temp.Put("sCover",rs(3))
+		temp.Put("sAuthor",rs(4))
+		temp.Put("sRate",rs(5))
+		temp.Put("sDescription",rs(6))
+		temp.Put("sFileSize",rs(7))
+		temp.Put("sLanguage",rs(8))
+		temp.Put("sDownload",rs(9))
+		temp.Put("sPDF",rs(10))
+		temp.Put("sPublishDate",rs(11))
+		
+		books.Add(temp)
+		
+		UnzipBook(rs(0))
+		
+	Next
+	
+	If File.Exists(File.DirApp & "/Data","visit_book1") = False Then
+		If books.Size > 0 Then
+			Library.WriteCounterReadBook(temp.Get("sID"))
+		End If
+	End If
+			
+	Dim db As Categories
+	db.Initialize
+	db.AddBook(books)
+	
+	For j = 0 To books.Size - 1
+		Dim ta As Map
+		ta = books.Get(j)
+		Dim db1 As Categories
+		db1.Initialize
+		db1.DownloadedBook(ta.Get("sID"),"1")
+		db1.Close
+	Next
+	
+	db.Close
+	
+	MainForm.RootPane.Enabled = True
+	
+End Sub
+
+Sub Downloads(FilterName As String,FilterValue As String)
+	
+	If File.Exists(File.DirApp & "/Data/book","") = False Then Return
+	
+	Dim ls As List
+	Dim dbDownload As Categories
+	dbDownload.Initialize
+	
+	ls = dbDownload.GetDownloadedBook(FilterName,FilterValue)
+	fx.Msgbox(MainForm,"تعداد کتاب های دانلود شده " & ls.Size,"توجه")
+	
+	dbDownload.Close
+	
+	Dim top As Int
+	lvdownloads.Items.Clear
+	
+	top = 0
+	
+	For i = 0 To ls.Size - 1
+		
+		Dim p As Pane
+		p.Initialize("")
+		p.LoadLayout("frmtemplate_box")
+		p.SetSize(lvbooks.Width,200)
+		lvdownloads.Items.Add(p)
+		
+		img1.Visible = True
+		
+		Dim ms As Map
+		ms = ls.Get(i)
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & ms.Get("sID"),"cover.jpg") Then
+			img1.SetImage(fx.LoadImage(File.DirApp & "/Data" & "/book/" & ms.Get("sID"),"cover.jpg"))
+		Else
+			img1.SetImage(fx.LoadImage(File.DirAssets,"no_cover.png"))
+		End If
+		
+		btndeletebook1.Visible = True
+		btndeletebook1.Tag = ms.Get("sID")
+		
+		img1.Tag = ms.Get("sID")
+		
+		If i + 1 > ls.Size - 1 Then
+			top = top + p.Height + 10
+			Exit
+		End If
+		
+		img2.Visible = True
+		
+		Dim ms1 As Map
+		ms1 = ls.Get(i+1)
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & ms1.Get("sID"),"cover.jpg") Then
+			img2.SetImage(fx.LoadImage(File.DirApp & "/Data" & "/book/" & ms1.Get("sID"),"cover.jpg"))
+		Else
+			img2.SetImage(fx.LoadImage(File.DirAssets,"no_cover.png"))
+		End If
+		
+		img2.Tag = ms1.Get("sID")
+		
+		btndeletebook2.Visible = True
+		btndeletebook2.Tag = ms1.Get("sID")
+		
+		If i + 2 > ls.Size - 1 Then
+			top = top + p.Height + 10
+			Exit
+		End If
+		
+		img3.Visible = True
+		
+		Dim ms2 As Map
+		ms2 = ls.Get(i+2)
+		
+		btndeletebook3.Visible = True
+		btndeletebook3.Tag = ms2.Get("sID")
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & ms2.Get("sID"),"cover.jpg") Then
+			img3.SetImage(fx.LoadImage(File.DirApp & "/Data" & "/book/" & ms2.Get("sID"),"cover.jpg"))
+		Else
+			img3.SetImage(fx.LoadImage(File.DirAssets,"no_cover.png"))
+		End If
+		
+		img3.Tag = ms2.Get("sID")
+		
+	Next
+	
+End Sub
+
+Sub JobDone(Job As HttpJob)
+	
+	If Job.Success Then
+		If Job.JobName = "book" Then
+			
+			Dim js As JSONParser
+			js.Initialize(Job.GetString)
+			Dim res As Map = js.NextObject
+	
+			If res.IsInitialized Then
+				If res.Get("success") = True Then
+					Dim ls As List
+					ls = res.Get("result")
+					listTopBook = ls
+					TopBooks
+				End If
+			End If
+		
+		else If Job.JobName = "bookcount" Then
+			Dim md As Map
+			Dim js As JSONParser
+			js.Initialize(Job.GetString)
+			md = js.NextObject
+			
+			If md.ContainsKey("result") Then
+				Dim c1,c2 As Int
+				Dim db As Categories
+				db.Initialize
+				c1 = db.GetBookCount
+				db.Close
+				c2 = md.Get("result")
+				
+				If c1 <> c2 Then
+					If fx.Msgbox2(MainForm,"لیست کتاب ها اخیرا تغییر کرده است.آیا مایلید بروزرسانی انجام دهید؟","توجه","بله","خیر","",fx.MSGBOX_CONFIRMATION)= fx.DialogResponse.POSITIVE Then
+						File.Delete(File.DirApp & "/Data","data.db")
+						actDownload.ForceUpdate = True
+						actDownload.ShowDownload
+					End If
+				End If
+			End If
+		
+		Else If Job.JobName = "newsletter" Then
+			If Job.GetString = "1" Then
+				fx.Msgbox(MainForm,"شما با موفقیت در خبرنامه عضو شدید","توجه")
+			Else if Job.GetString = "2" Then
+				fx.Msgbox(MainForm,"عضویت شما از خبرنامه حذف شد","توجه")
+			End If
+		End If
+		
+	End If
+	
+End Sub
+
+Sub TopBooks
+	
+	Dim image As Map
+	image.Initialize
+
+	#region AddBook
+	
+	topMainPage = topMainPage + 20
+	
+	Dim lb As Label
+	lb.Initialize("")
+	lb.TextColor = fx.Colors.Black
+	lb.Font = fx.LoadFont(File.DirAssets,"byekan.ttf",16)
+	lb.Text = "   کتاب های محبوب"
+	lvbooks.Items.Add(lb)
+	topMainPage = topMainPage + 30dip
+	
+	If listTopBook.IsInitialized = False Then Return
+	
+	Dim images As Map
+	images.Initialize
+	
+	For i = 0 To listTopBook.Size - 1
+
+		If i >= 6 Then Exit
+		
+		Dim p As Pane
+		p.Initialize("")
+		p.LoadLayout("frmtemplate_box")
+		p.SetSize(lvbooks.Width,200)
+		lvbooks.Items.Add(p)
+		
+		Dim m1 As Map
+		m1 = listTopBook.Get(i)
+		
+		img1.Visible = True
+		images.Put(img1,Library.BaseUrl & m1.Get("sCover"))
+
+		If File.Exists(File.DirApp & "/Data" & "/book/" & m1.Get("sID"),"bank.db") Then
+			img1.Tag = m1.Get("sID")
+		Else
+			img1.Tag = m1
+		End If
+
+		If i + 1 > listTopBook.Size - 1 Then
+			topMainPage = topMainPage + p.Height + 10
+			Exit
+		End If
+		
+		img2.Visible = True
+		
+		Dim m2 As Map
+		m2 = listTopBook.Get(i+1)
+
+		images.Put(img2,Library.BaseUrl & m2.Get("sCover"))
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & m2.Get("sID"),"bank.db") Then
+			img2.Tag = m2.Get("sID")
+		Else
+			img2.Tag = m2
+		End If
+		
+		img2.Tag = listTopBook.Get(i+1)
+		
+		If i + 2 > listTopBook.Size - 1 Then
+			topMainPage = topMainPage + p.Height + 10
+			Exit
+		End If
+		
+		img3.Visible = True
+		
+		Dim m3 As Map
+		m3 = listTopBook.Get(i+2)
+		images.Put(img3,Library.BaseUrl & m2.Get("sCover"))
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & m3.Get("sID"),"bank.db") Then
+			img3.Tag = m3.Get("sID")
+		Else	
+			img3.Tag = m3
+		End If
+		
+		img3.Tag = listTopBook.Get(i+2)
+		
+	Next
+	
+	#end region	
+	
+	Dim im As ImageDownloader
+	im.Initialize
+	im.Download(images)
+	
+End Sub
+
+Sub LastVisit
+	
+	Dim ls,images As Map
+	ls = Library.GetTopReadBook
+	
+	lvbooks.Items.Clear
+	
+	images.Initialize
+	
+	If ls = Null Then Return
+	If ls.IsInitialized = False Then Return
+	
+	topMainPage = 0
+	
+	For i = 0 To ls.Size - 1
+		
+		If i >= 6 Then Exit
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & ls.GetKeyAt(i),"bank.db") = False Then Continue
+		
+		Dim p As Pane
+		p.Initialize("")
+		p.LoadLayout("frmtemplate_box")
+		p.SetSize(lvbooks.Width,200)
+		lvbooks.Items.Add(p)
+		
+		img1.Visible = True
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & ls.GetKeyAt(i),"cover.jpg") Then
+			img1.SetImage(fx.LoadImage(File.DirApp & "/Data" & "/book/" & ls.GetKeyAt(i),"cover.jpg"))
+		Else
+			img1.SetImage(fx.LoadImage(File.DirAssets,"no_cover.png"))
+		End If
+		
+		img1.Tag = ls.GetKeyAt(i)
+		
+		If i + 1 > ls.Size - 1 Then
+			topMainPage = topMainPage + p.Height + 10
+			Exit
+		End If
+		
+		img2.Visible = True
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & ls.GetKeyAt(i+1),ls.GetKeyAt(i+1) & ".jpg") Then
+			img2.SetImage(fx.LoadImage(File.DirApp & "/Data" & "/book/" & ls.GetKeyAt(i+1),"cover.jpg"))
+		Else
+			img1.SetImage(fx.LoadImage(File.DirAssets,"no_cover.png"))
+		End If
+		
+		img2.Tag = ls.GetKeyAt(i+1)
+		
+		If i + 2 > ls.Size - 1 Then
+			topMainPage = topMainPage + p.Height + 10
+			Exit
+		End If
+		
+		img3.Visible = True
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" &ls.GetKeyAt(i+2),ls.GetKeyAt(i+2) & ".jpg") Then
+			img3.SetImage(fx.LoadImage(File.DirApp & "/Data" & "/book/" & ls.GetKeyAt(i),"cover.jpg"))
+		Else
+			img1.SetImage(fx.LoadImage(File.DirAssets,"no_cover.png"))
+		End If
+		
+		img3.Tag = ls.GetKeyAt(i+2)
+		
+	Next
+	
+End Sub
+
+Sub UnzipBook(ID As String)
+	
+	File.MakeDir(File.DirApp & "/Data","book/" & ID)
+	
+	Dim zip As ABZipUnzip
+	File.Copy(File.DirAssets,"book_" & ID & ".zip",File.DirApp & "/Data","book_" & ID & ".zip")
+	Log(zip.ABUnzip(File.Combine(File.DirApp & "/Data","book_" & ID & ".zip"),File.Combine(File.DirApp & "/Data","book/" & ID)))
+	File.Delete(File.DirApp & "/Data","book_" & ID & ".zip")
+	
+	DateTime.DateFormat = "yyyy-mm-dd"
+	File.WriteString(File.DirApp & "/Data" & "/book/" & ID,"date",DateTime.Date(DateTime.Now))
+				
+End Sub
+
+Sub tab1_TabChanged (SelectedTab As TabPage)
+	
+	Dim mnu As MenuItem
+	mnu = MenuBar1.Menus.Get(1)
+		
+	If SelectedTab.Tag = "download" Then
+		mnu.Enabled = True
+	Else
+		mnu.Enabled = False
+	End If
+	
+End Sub
+
+#Region Menu
+
+Sub mnumessage_Action
+	actMessage.ShowMessage	
+End Sub
+
+Sub mnusearch_Action
+	
+	Dim search As String
+	Dim dialog As Dialogs8
+	
+	dialog.Initialize
+	search = dialog.TextInputDialog("جستجوی","لطفا قسمتی از نام کتاب را وارد کنید","","اینجا")
+	
+	If search.Length = 0 Then
+		dialog.WarningDialog("توجه","","لطفا قسمتی از عبارت را وارد کنید")
+		Return
+	End If
+	
+	Dim DBRes As Categories
+	Dim ls As List
+	
+	DBRes.Initialize
+	ls = DBRes.SearchWordBooks(search)
+	DBRes.Close
+	
+	If ls.IsInitialized Then SearchBook(ls)
+	
+End Sub
+
+Sub SearchBook(ls As List)
+	
+	If File.Exists(File.DirApp & "/Data" & "/book","") = False Then Return
+	
+	If ls.Size = 0 Then
+		lvdownloads.Items.Clear
+		Return	
+	End If
+	
+	lvdownloads.Items.Clear
+	
+	For i = 0 To ls.Size - 1
+		
+		Dim p As Pane
+		p.Initialize("")
+		p.LoadLayout("frmtemplate_box")
+		p.SetSize(lvbooks.Width,200)
+		lvdownloads.Items.Add(p)
+		
+		img1.Visible = True
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & ls.Get(i),"cover.jpg") Then
+			img1.SetImage(fx.LoadImage(File.DirApp & "/Data" & "/book/" & ls.Get(i),"cover.jpg"))
+		Else
+			img1.SetImage(fx.LoadImage(File.DirAssets,"no_cover.png"))
+		End If
+		
+		img1.Tag = ls.Get(i)
+		
+		If i + 1 > ls.Size - 1 Then
+			Exit
+		End If
+		
+		img2.Visible = True
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & ls.Get(i+1),"cover.jpg") Then
+			img2.SetImage(fx.LoadImage(File.DirApp & "/Data" & "/book/" & ls.Get(i+1),"cover.jpg"))
+		Else
+			img2.SetImage(fx.LoadImage(File.DirAssets,"no_cover.png"))
+		End If
+		
+		img2.Tag = ls.Get(i+1)
+		
+		If i + 2 > ls.Size - 1 Then
+			Exit
+		End If
+		
+		img3.Visible = True
+		
+		If File.Exists(File.DirApp & "/Data" & "/book/" & ls.Get(i),"cover.jpg") Then
+			img1.SetImage(fx.LoadImage(File.DirApp & "/Data" & "/book/" & ls.Get(i),"cover.jpg"))
+		Else
+			img1.SetImage(fx.LoadImage(File.DirAssets,"no_cover.png"))
+		End If
+		
+		img3.Tag = ls.Get(i+2)
+		
+	Next
+	
+End Sub
+
+Sub mnufilterauthor_Action
+	
+		Dim db As Categories
+		Dim ls As List
+		Dim res As Int
+		
+		db.Initialize
+		ls = db.GetBookAuthor
+		db.Close
+		
+		If ls.IsInitialized Then
+			res = fx.InputList(MainForm,ls,"نویسنده را انتخاب کنید","توجه",0)
+		End If
+		
+		If res < 0 Then Return
+		
+		Dim auth As String
+		auth = ls.Get(res)
+		Downloads("sAuthor",auth)
+		
+End Sub
+
+Sub mnufiltertopic_Action
+	
+	Dim db1 As Categories
+	Dim ls1 As List
+	Dim res1 As Int
+	
+	db1.Initialize
+	ls1 = db1.GetBookTopic
+	db1.Close
+	
+	If ls1.IsInitialized Then
+		res1 = fx.InputList(MainForm,ls1,"موضوع را انتخاب کنید","توجه",0)
+	End If
+	
+	If res1 < 0 Then Return
+	
+	Dim title As String
+	title = ls1.Get(res1)
+	Downloads("sTitle",title)
+		
+End Sub
+
+Sub mnufilterall_Action
+	Downloads("","")
+End Sub
+
+Sub mnusocial_Action
+	actSiteSocial.sType = "link"
+	actSiteSocial.ShowList
+End Sub
+
+Sub mnusites_Action
+	actSiteSocial.sType = "site"
+	actSiteSocial.ShowList
+End Sub
+
+Sub mnuabout_Action
+	actAbout.ShowAbout
+End Sub
+
+Sub mnucontact_Action
+	actContact.ShowContact
+End Sub
+
+Sub mnunewsletter_Action
+	
+		Dim in1 As Dialogs8
+		Dim res As String
+		
+		in1.Initialize
+		res = in1.TextInputDialog("توجه","لطفا ایمیل خود را برای عضویت در خبرنامه وارد کنید","","")
+		
+		If res.IndexOf("@") > -1 Then
+			NewsLetter(res)
+		Else
+			fx.Msgbox(MainForm,"لطفا ایمیل را معتبر وارد کنید","توجه")
+		End If
+
+End Sub
+
+Sub NewsLetter(Email As String)
+	
+	loading.Show("در حال بررسی")
+	
+	Dim hu As HttpJob
+	hu.Initialize("newsletter",Me)
+	hu.PostString(Library.URL & "newsletter","email=" & Email)
+	
+End Sub
+
+Sub mnusetting_Action
+	actSetting.ShowForm
+End Sub
+
+Sub mnusearchbook_Action
+	actSearchBook.ShowSearchBook
+End Sub
+
+#End Region
+
+Sub imgbook_MouseClicked (EventData As MouseEvent)
+	
+	Dim im As ImageView
+	im = Sender
+	
+	If im.Tag Is Map Then
+		Dim tem As Map
+		tem = im.Tag
+		actDownload.ShowDownload
+		actDownload.DownloadBookFromNet(tem.Get("sID"))
+		Return
+	End If
+	
+	actBookMenu.BookID = im.Tag
+	actBookMenu.ShowBookMenu
+	
+End Sub
+
+Sub btndeletebook_Action
+	
+	Dim b1 As Button
+	b1 = Sender
+	
+	If fx.Msgbox2(MainForm,"آیا مطمین به حذف کتاب هستید؟","توجه","بله","خیر","",fx.MSGBOX_CONFIRMATION) = fx.DialogResponse.CANCEL Then Return
+	
+	Dim db As Categories
+	db.Initialize
+	db.DownloadedBook(b1.Tag,"0")
+	db.Close
+	
+	Dim sa As List
+	sa = File.ListFiles(File.DirApp & "/Data/book/" & b1.Tag)
+	
+	If sa.IsInitialized Then
+		For i = 0 To sa.Size - 1
+			File.Delete(File.DirApp & "/Data/book/" & b1.Tag,sa.Get(i))
+		Next
+	End If
+	
+	Library.ClearBookReaded(b1.Tag)
+	
+	Downloads("","")
+	LastVisit
+	
+End Sub

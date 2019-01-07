@@ -1,0 +1,1674 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.Win.v10.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.Win.IPrintableSource">
+
+            <summary>
+                <para>Can be implemented by a List Editor to support printing functionality for the List Views that use this List Editor.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.IPrintableSource.GetPrintable">
+            <summary>
+                <para>Gets the List Editor's control which implements the <b>DevExpress.XtraPrinting.IPrintable</b> interface.
+</para>
+            </summary>
+            <returns>The List Editor's control which implements the <b>DevExpress.XtraPrinting.IPrintable</b> interface.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IHtmlFormattingSupport">
+
+            <summary>
+                <para>Declares members implemented by Windows Forms List Editors and Detail View Items that support HTML formatting of the display text.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.SystemModule.IHtmlFormattingSupport.SetHtmlFormattingEnabled(System.Boolean)">
+            <summary>
+                <para>Enables or disables HTML Formatting of the display text.
+</para>
+            </summary>
+            <param name="htmlFormattingEnabled">
+		<b>true</b> to enable HTML formatting of the display text; otherwise <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.Editors.StaticTextDetailItem">
+
+            <summary>
+                <para>Represents the Static Text Detail View Item used in <b>XAF</b> Windows Forms applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.StaticTextDetailItem.#ctor(DevExpress.ExpressApp.Model.IModelStaticText,System.Type)">
+            <summary>
+                <para>Creates and initializes a new instance of the StaticTextDetailItem class.
+</para>
+            </summary>
+            <param name="model">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelStaticText"/> object that represents the Application Model's <b>Views</b> | <b>DetailView</b> | <b>Items</b> | <b>DetailViewItem</b> node that defines the current Detail View Item. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.StaticText.Model"/> property.
+
+            </param>
+            <param name="objectType">
+		A <see cref="T:System.Type"/> object that represents the type of the object for which the current Detail View Item's View is created. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.DetailViewItem.ObjectType"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.StaticTextDetailItem.SetHtmlFormattingEnabled(System.Boolean)">
+            <summary>
+                <para>Enables or disables HTML formatting of the current Static Text Detail View Item's text. 
+</para>
+            </summary>
+            <param name="htmlFormattingEnabled">
+		<b>true</b>, to enable HTML formatting of the current Static Text Detail View Item's text; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.Editors.StaticImageDetailItem">
+
+            <summary>
+                <para>Represents the Static Image Detail View Item used in <b>XAF</b> Windows Forms applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.StaticImageDetailItem.#ctor(DevExpress.ExpressApp.Model.IModelStaticImage,System.Type)">
+            <summary>
+                <para>Creates and initializes a new instance of the StaticImageDetailItem class.
+</para>
+            </summary>
+            <param name="model">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelStaticImage"/> object that represents the Application Model's <b>Views</b> | <b>DetailView</b> | <b>Items</b> | <b>DetailViewItem</b> node that defines the current Detail View Item. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.StaticImage.Model"/> property.
+
+            </param>
+            <param name="objectType">
+		A <see cref="T:System.Type"/> object that represents the type of the object for which the current Detail View Item's View is created. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.DetailViewItem.ObjectType"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.ISplash">
+
+            <summary>
+                <para>Declares members implemented by a splash screen which is displayed when a Windows Forms application starts.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.ISplash.SetDisplayText(System.String)">
+            <summary>
+                <para>Sets the text to be displayed by the label located on the default splash screen form.
+</para>
+            </summary>
+            <param name="displayText">
+		A string value representing the text to be shown on the default splash screen form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.ISplash.Start">
+            <summary>
+                <para>Shows a splash screen form.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.ISplash.Stop">
+            <summary>
+                <para>Closes a splash screen form.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.ISplash.IsStarted">
+            <summary>
+                <para>Indicates whether the splash screen is being displayed.
+</para>
+            </summary>
+            <value><b>true</b>, if the splash screen is being displayed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs">
+
+            <summary>
+                <para>This class is obsolete.<!--
+Represents arguments passed to the <see cref="E:DevExpress.ExpressApp.Win.Editors.GridListEditor.CustomCreateColumn"/> event.-->
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs.#ctor(DevExpress.XtraGrid.Columns.GridColumn,DevExpress.ExpressApp.NodeWrappers.ColumnInfoNodeWrapper,DevExpress.ExpressApp.Win.Editors.RepositoryEditorsFactory)">
+            <summary>
+                <para>The <see cref="T:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs"/> class is obsolete.<!--
+Creates and initializes a new instance of the CustomCreateColumnEventArgs class.-->
+</para>
+            </summary>
+            <param name="column">
+		@nbsp;<!-- 
+A <b>GridColumn</b> object that represents a <b>GridListEditor</b>'s column that is being created. This argument is used to initialize the <see cref="P:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs.Column"/> property. 
+-->
+
+            </param>
+            <param name="columnInfo">
+		@nbsp;<!-- 
+A <b>ColumnInfoNodeWrapper</b> object that represents the Application Model's node which contains information on the column being created. This argument is used to initialize the <see cref="P:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs.ColumnInfo"/> property.
+-->
+
+            </param>
+            <param name="repositoryFactory">
+		@nbsp;<!-- 
+A <b>RepositoryFactory</b> object that is used by the <b>GridListEditor</b> to create in-place editors. This argument is used to initialize the <see cref="P:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs.RepositoryFactory"/> property.
+ -->
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs.Column">
+            <summary>
+                <para>The <see cref="T:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs"/> class is obsolete.<!-- 
+Provides access to a <see cref="T:DevExpress.ExpressApp.Win.Editors.GridListEditor"/>'s column that is being created.
+ -->
+</para>
+            </summary>
+            <value>@nbsp;<!-- 
+A <b>GridColumn</b> object that represents a <b>GridListEditor</b>'s column that is being created.
+-->
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs.ColumnInfo">
+            <summary>
+                <para>The <see cref="T:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs"/> class is obsolete.
+<!-- 
+Provides access to the Application Model's node, which contains information on the <see cref="P:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs.Column"/>.
+ -->
+</para>
+            </summary>
+            <value>@nbsp;<!-- 
+A <b>ColumnInfoNodeWrapper</b> object that represents the Application Model's node, which contains information on the column being created.
+-->
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs.RepositoryFactory">
+            <summary>
+                <para>The <see cref="T:DevExpress.ExpressApp.Win.Editors.CustomCreateColumnEventArgs"/> class is obsolete.
+<!-- 
+Provides access to the Repository Item Factory that is used by the <see cref="T:DevExpress.ExpressApp.Win.Editors.GridListEditor"/>, whose column is being created.
+ -->
+</para>
+            </summary>
+            <value>@nbsp;<!-- 
+A <b>RepositoryFactory</b> object that is used by the <b>GridListEditor</b> to create in-place editors. 
+-->
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.Editors.ColumnCreatedEventArgs">
+
+            <summary>
+                <para>Represents arguments passed to the <see cref="E:DevExpress.ExpressApp.Win.Editors.GridListEditor.ColumnCreated"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.ColumnCreatedEventArgs.#ctor(DevExpress.XtraGrid.Columns.GridColumn,DevExpress.ExpressApp.Model.IModelColumn)">
+            <summary>
+                <para>Creates and initializes a new instance of the ColumnCreatedEventArgs class.
+</para>
+            </summary>
+            <param name="column">
+		A <b>GridColumn</b> object that represents the column which has been created. This argument is used to initialize the <see cref="P:DevExpress.ExpressApp.Win.Editors.ColumnCreatedEventArgs.Column"/> property.
+
+            </param>
+            <param name="columnInfo">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelColumn"/> object that represents the Application Model's node which contains information on the created column. This argument is used to initialize the <see cref="P:DevExpress.ExpressApp.Win.Editors.ColumnCreatedEventArgs.ColumnInfo"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.ColumnCreatedEventArgs.ColumnInfo">
+            <summary>
+                <para>Provides access to the Application Model's node which contains information on the created column.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.Model.IModelColumn"/> object that represents the Application Model's node which contains information on the created column.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.ColumnCreatedEventArgs.Column">
+            <summary>
+                <para>Provides access to the column that has been created.
+</para>
+            </summary>
+            <value>A <b>GridColumn</b> object that represents the column which has been created.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.Editors.GridListEditor">
+
+            <summary>
+                <para>Represents the List Editor used by default in <b>XAF</b> Windows Forms applications, to display List Views in a UI.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.FindColumnPropertyName(DevExpress.XtraGrid.Columns.GridColumn)">
+            <summary>
+                <para>Returns the name of the property corresponding to the GridListEditor's specific <see cref="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.GridView"/> column.
+</para>
+            </summary>
+            <param name="column">
+		A <b>DevExpress.XtraGrid.Columns.GridColumn</b> object representing the required <b>GridControl</b>'s column.
+
+            </param>
+            <returns>A string holding the name of the property corresponding to the specified column.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.#ctor(DevExpress.ExpressApp.Model.IModelListView)">
+            <summary>
+                <para>Creates and initializes an instance of the GridListEditor class.
+</para>
+            </summary>
+            <param name="model">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelListView"/> object representing the Application Model's node which contains information on the View that will use the instantiated List Editor.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.ApplyModel">
+            <summary>
+                <para>Updates the current List Editor's state in accordance with the information stored in the Application Model.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.RemoveColumn(DevExpress.ExpressApp.Editors.ColumnWrapper)">
+            <summary>
+                <para>Removes a particular column from the GridListEditor's <see cref="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.GridView"/>.
+</para>
+            </summary>
+            <param name="column">
+		A <b>ColumnWrapper</b> object representing the column to remove.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.Columns">
+            <summary>
+                <para>Provides access to a collection of objects representing the GridListEditor's columns.
+</para>
+            </summary>
+            <value>An <b>IList@lt;ColumnWrapper@gt;</b> object representing a collection of GridListEditor's column wrappers.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.RefreshColumns">
+            <summary>
+                <para>This method is intended for internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.#ctor">
+            <summary>
+                <para>Creates and initializes an instance of the GridListEditor class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.GridListEditor.BeginCustomization">
+            <summary>
+                <para>Occurs after the customization form that displays headers of hidden columns has been displayed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.GridListEditor.ColumnCreated">
+            <summary>
+                <para>Occurs after a column has been created in the GridListEditor's <see cref="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.GridView"/>.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.GridListEditor.CustomCreateColumn">
+            <summary>
+                <para>This event is obsolete.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.GridListEditor.EndCustomization">
+            <summary>
+                <para>Occurs before the customization form that displays headers of hidden columns has been closed.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.GridListEditor.GridDataSourceChanging">
+            <summary>
+                <para>Occurs after a handle has been created for the GridListEditor's <see cref="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.Grid"/>, but before the <b>Grid</b> control's data source has been assigned. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.GridListEditor.ObjectConditionalFormatting">
+            <summary>
+                <para>Occurs before the <see cref="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.GridView"/>'s cell of the GridListEditor has been repainted in a UI. Enables the appearance settings of individual cells to be changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.ActiveFilterString">
+            <summary>
+                <para>This constant is intended for internal use.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.AutoExpandAllGroups">
+            <summary>
+                <para>Holds the <b>AutoExpandAllGroups</b> property's name of the Application Model's <b>Application</b> | <b>Views</b> | <b>List View</b> node.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.ColumnDefaultWidth">
+            <summary>
+                <para>This constant is intended for internal use.
+</para>
+            </summary>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.DragDropCustomCodeId">
+            <summary>
+                <para>This member is intended for internal use.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.DragEnterCustomCodeId">
+            <summary>
+                <para>This member is intended for internal use.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.IsActiveFilterEnabled">
+            <summary>
+                <para>This constant is intended for internal use.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.IsFooterVisible">
+            <summary>
+                <para>Holds the <b>IsFooterVisible</b> property's name of the Application Model's <b>Application</b> | <b>Views</b> | <b>List View</b> node.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.IsGroupPanelVisible">
+            <summary>
+                <para>Holds the <b>IsGroupPanelVisible</b> property's name of the Application Model's <b>Application</b> | <b>Views</b> | <b>List View</b> node.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.BreakLinksToControls">
+            <summary>
+                <para>Removes references to the GridListEditor's control and its event handlers.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.CanShowPopupMenu(System.Drawing.Point)">
+            <summary>
+                <para>Returns a Boolean value that indicates whether it's possible to invoke a context menu at the specified position. 
+</para>
+            </summary>
+            <param name="position">
+		A <see cref="T:System.Drawing.Point"/> object that specifies the position at which a context menu is invoked.
+
+            </param>
+            <returns><b>true</b> if it's possible to invoke a context menu at the specified position; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.Dispose">
+            <summary>
+                <para>Releases all resources used by the GridListEditor.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.GetIndexByObject(System.Object)">
+            <summary>
+                <para>Returns the index of an object that represents a <see cref="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.GridView"/>'s row.
+</para>
+            </summary>
+            <param name="obj">
+		An object that represents a <b>GridView</b>'s row.
+
+            </param>
+            <returns>An index of an object that represents a <b>GridView</b>'s row.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.GetObjectByIndex(System.Int32)">
+            <summary>
+                <para>Returns an object that represents the <see cref="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.GridView"/>'s row with the specified index. 
+</para>
+            </summary>
+            <param name="index">
+		The index of a <b>GridView</b>'s row.
+
+            </param>
+            <returns>An object that represents the <b>GridView</b>'s row with the specified index.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.GetOrderedObjects">
+            <summary>
+                <para>Returns an ordered list of objects that represent the <see cref="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.GridView"/>'s rows.
+</para>
+            </summary>
+            <returns>An ordered list of objects that represent the <b>GridView</b>'s rows.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.GetPrintable">
+            <summary>
+                <para>Allows the List Views that are represented by the GridListEditor to be printed via the Printing module.
+</para>
+            </summary>
+            <returns>The List Editor's control which implements the <b>DevExpress.XtraPrinting.IPrintable</b> interface.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.GetSelectedObjects">
+            <summary>
+                <para>Returns a collection of objects that are currently selected in the GridListEditor's control.
+</para>
+            </summary>
+            <returns>A list of the selected objects.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.Refresh">
+            <summary>
+                <para>Refreshes the bound data source of the GridListEditor's control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.RemoveColumn(System.String)">
+            <summary>
+                <para>Removes the column which represents the property with the specified name, from the GridListEditor's <see cref="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.GridView"/>.
+</para>
+            </summary>
+            <param name="propertyName">
+		The name of a property that the column which must be removed represents.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.SetHtmlFormattingEnabled(System.Boolean)">
+            <summary>
+                <para>Enables or disables HTML Formatting of the GridListEditor's column captions.
+</para>
+            </summary>
+            <param name="htmlFormattingEnabled">
+		<b>true</b> to enable HTML formatting of the <b>GridListEditor</b>'s column captions; otherwise <b>false</b>. The default value is specified by the <see cref="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsEnableHtmlFormatting.EnableHtmlFormatting"/> property of the Application Model's <b>Application</b> | <b>Options</b> node.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.SetMenuManager(DevExpress.Utils.Menu.IDXMenuManager)">
+            <summary>
+                <para>Sets the <b>IDXMenuManager</b> object that controls the Look @amp; Feel options of the Context Menu Template via the GridListEditor's control. 
+
+</para>
+            </summary>
+            <param name="manager">
+		An <b>IDXMenuManager</b> object that controls the Look @amp; Feel options of the Context Menu Template via the List Editor's control.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.Setup(DevExpress.ExpressApp.CollectionSourceBase,DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Performs additional initialization of the GridListEditor.
+</para>
+            </summary>
+            <param name="collectionSource">
+		A <see cref="T:DevExpress.ExpressApp.CollectionSourceBase"/> object that represent the Collection Source of the List View that the current List Editor represents in a UI.
+
+            </param>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that can be used to manage the current application. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.GridListEditor.StartIncrementalSearch(System.String)">
+            <summary>
+                <para>Starts an incremental search for the specified string. 
+</para>
+            </summary>
+            <param name="searchString">
+		The text to locate.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.ContextMenuTemplate">
+            <summary>
+                <para>Provides access to the GridListEditor's Context Menu Template.
+</para>
+            </summary>
+            <value>A control which implements the <b>IContextMenuTemplate</b> interface and represents a List Editor's Context Menu Template.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.EditMode">
+            <summary>
+                <para>This property is obsolete, use the <see cref="P:DevExpress.ExpressApp.Editors.ListEditor.AllowEdit"/> property instead.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.EditMode"/> enumeration value that represents the edit mode of the current List Editor.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.FocusedObject">
+            <summary>
+                <para>Gets or sets the focused object in the GridListEditor.
+</para>
+            </summary>
+            <value>The focused object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.Grid">
+            <summary>
+                <para>Provides access to the GridListEditor's control.
+</para>
+            </summary>
+            <value>A <b>GridControl</b> object that represents the <b>GridListEditor</b>'s control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.GridView">
+            <summary>
+                <para>Provides access to the <b>GridControl</b>'s View that is used to display data in the GridListEditor.
+</para>
+            </summary>
+            <value>A <b>GridView</b> object that represents the <b>GridControl</b>'s View used to display data in the <b>GridListEditor</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.Name">
+            <summary>
+                <para>Specifies the GridListEditor's name.
+</para>
+            </summary>
+            <value>A <b>String</b> value representing the current List Editor's name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.NewItemRowPosition">
+            <summary>
+                <para>Gets or sets the position of the new item row within the GridListEditor.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.NewItemRowPosition"/> enumeration value that specifies the position of the new item row within the <b>GridListEditor</b>. The default value is specified by the <see cref="P:DevExpress.ExpressApp.SystemModule.IModelListViewNewItemRow.NewItemRowPosition"/> property of the Application Model's <b>Application</b> | <b>Views</b> | <b>List View</b> node.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.PopupSite">
+            <summary>
+                <para>Returns the control over which a context menu is being invoked.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.Control"/> object that represents the control over which a context menu is being invoked.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.ProcessSelectedItemBySingleClick">
+            <summary>
+                <para>Specifies whether a List View's record must be processed after a click or a double-click.
+</para>
+            </summary>
+            <value><b>true</b> if a List View's record must be processed after a click; <b>false</b> if a List View's record must be processed after a double-click.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.RepositoryFactory">
+            <summary>
+                <para>Provides access to the Repository Item Factory that is used by the GridListEditor to create in-place editors.
+</para>
+            </summary>
+            <value>A <b>RepositoryFactory</b> object that is used by the <b>GridListEditor</b> to create in-place editors.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.RequiredProperties">
+            <summary>
+                <para>Returns an array of descriptors for the properties considered bindable by the GridListEditor's Collection Source.
+</para>
+            </summary>
+            <value>An array of descriptors for the properties considered bindable by the List Editor's Collection Source.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.ScrollOnMouseMove">
+            <summary>
+                <para>This property is intended for internal use.
+<!--
+Specifies whether the GridListEditor's automatic scrolling is enabled.
+-->
+</para>
+            </summary>
+            <value>@nbsp;
+<!--
+<b>true</b> to scroll through the <b>GridListEditor</b> in response to mouse movement; otherwise <b>false</b>.
+-->
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.SelectionType">
+            <summary>
+                <para>Returns the selection type supported by the GridListEditor.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.SelectionType"/> enumeration value that represents the selection type supported by the current List Editor.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.TrackMousePosition">
+            <summary>
+                <para>Specifies whether mouse tracking is enabled for the GridListEditor.
+</para>
+            </summary>
+            <value><b>true</b> to enable mouse tracking; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.GroupSummary">
+            <summary>
+                <para>Holds the <b>GroupSummary</b> property's name of the Application Model's <b>Application</b> | <b>Views</b> | <b>List View</b> node.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.GridListEditor.ReadOnlyEditors">
+            <summary>
+                <para>Specifies whether read-only editors with enabled in-place editing are used by the GridListEditor.
+</para>
+            </summary>
+            <value><b>true</b>, if read-only editors with enabled in-place editing are used; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.GroupSummaryFieldName">
+            <summary>
+                <para>Holds the <b>GroupSummaryFieldName</b> property's name of the Application Model's <b>Application</b> | <b>Views</b> | <b>List View</b> node.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.GroupSummarySortOrder">
+            <summary>
+                <para>Holds the <b>GroupSummarySortOrder</b> property's name of the Application Model's <b>Application</b> | <b>Views</b> | <b>List View</b> node.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.GridListEditor.GroupSummaryType">
+            <summary>
+                <para>Holds the <b>GroupSummaryType</b> property's name of the Application Model's <b>Application</b> | <b>Views</b> | <b>List View</b> node.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.ShowInSingleWindowStrategy">
+
+            <summary>
+                <para>A Show View Strategy that can be used as an alternative to the <see cref="T:DevExpress.ExpressApp.Win.ShowInMultipleWindowsStrategy"/>. Provides a different behavior when a Detail View is invoked from a List View that is displayed in the main Window.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.ShowInSingleWindowStrategy.#ctor(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Creates and initializes an instance of the ShowInSingleWindowStrategy class.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> descendant object that represents the application that will use the instantiated Show View Strategy.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.ShowInMultipleWindowsStrategy">
+
+            <summary>
+                <para>Represents the Show View Strategy used in <b>XAF</b> Windows Forms applications by default.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.ShowInMultipleWindowsStrategy.#ctor(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Creates and initializes an instance of the ShowInMultipleWindowsStrategy class.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> descendant object that represents the application that will use the instantiated Show View Strategy.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.WinShowViewStrategyBase">
+
+            <summary>
+                <para>An abstract class that serves as the base class for Show View Strategies used in <b>XAF</b> Windows Forms applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.Windows">
+            <summary>
+                <para>Provides access to a read-only collection of the application's Windows.
+</para>
+            </summary>
+            <value>A <b>ReadOnlyCollection@lt;WinWindow@gt;</b> object representing a read-only collection of the application's Windows.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.Explorers">
+            <summary>
+                <para>Gets a list of the application's Explorer Windows.
+</para>
+            </summary>
+            <value>A <b>List@lt;WinWindow@gt;</b> object representing a list of the application's Explorer Windows.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.Inspectors">
+            <summary>
+                <para>Gets a list of the application's Inspector Windows.
+</para>
+            </summary>
+            <value>A <b>List@lt;WinWindow@gt;</b> object representing a list of the application's Inspector Windows.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.#ctor(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>The constructor which provides basic functionality for the classes derived from the WinShowViewStrategyBase class.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> descendant object that represents the application that will use the instantiated Show View Strategy.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.StartupWindowShown">
+            <summary>
+                <para>Occurs after the main <see cref="T:DevExpress.ExpressApp.Window"/> has been displayed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.CloseAllWindows">
+            <summary>
+                <para>Closes the <see cref="P:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.MainWindow"/> if it exists, otherwise tries to close all the Windows from the <see cref="P:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.Windows"/> collection.
+</para>
+            </summary>
+            <returns><b>true</b> if the Windows have been closed successfully; otherwise, <b>false</b>. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.Dispose">
+            <summary>
+                <para>Releases all the resources allocated by the current Show View Strategy.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.IsViewShownFromNestedObjectSpace(DevExpress.ExpressApp.Frame)">
+            <summary>
+                <para>This method is used internally in <b>XAF</b> and isn't intended to be called from your code.
+</para>
+            </summary>
+            <param name="sourceFrame">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.ShowStartupWindow">
+            <summary>
+                <para>Displays the application's main <see cref="T:DevExpress.ExpressApp.Window"/>.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.WinShowViewStrategyBase.MainWindow">
+            <summary>
+                <para>Provides access to the application's main <see cref="T:DevExpress.ExpressApp.Window"/>.
+</para>
+            </summary>
+            <value>A <b>Window</b> object that represents the application's main Window.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.WinNewObjectViewController">
+
+            <summary>
+                <para>Inherits from the <see cref="T:DevExpress.ExpressApp.SystemModule.NewObjectViewController"/> to implement Windows Forms specific behavior.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.SystemModule.WinNewObjectViewController.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Win.SystemModule.WinNewObjectViewController"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.Editors.DXPropertyEditor">
+
+            <summary>
+                <para>Represents a base class for Property Editors that use Developer Express Windows Forms controls.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.DXPropertyEditor.ResetAppearance">
+            <summary>
+                <para>Resets the Look @amp; Feel properties of the Property Editor.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.DXPropertyEditor.CustomSetupRepositoryItem">
+            <summary>
+                <para>Occurs after the creation of a Property Editor's control.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.DXPropertyEditor.RepositoryItemsTypesWithMandatoryButtons">
+            <summary>
+                <para>When a Property Editor is displayed in a read-only mode, in most cases the control's buttons should be invisible to prohibit end-user interaction. However, certain controls must have their buttons visible to provide the viewing functionality. These controls' repository item types are listed in the collection returned by this field. By default, this collection contains the following types: <b>RepositoryItemImageEdit</b>, <b>RepositoryItemMemoExEdit</b>, <b>RepositoryItemRtfEditEx</b> and <b>RepositoryItemObjectEdit</b>.
+</para>
+            </summary>
+            <returns>The list of repository item types. The default is (RepositoryItemImageEdit, RepositoryItemMemoExEdit, RepositoryItemRtfEditEx, RepositoryItemObjectEdit).
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.DXPropertyEditor.Control">
+            <summary>
+                <para>Provides access to the control that represents the current Property Editor in a UI.
+</para>
+            </summary>
+            <value>A <b>DevExpress.XtraEditors.BaseEdit</b> object representing a control used to display the current Property Editor in a UI.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.DXPropertyEditor.ErrorMessage">
+            <summary>
+                <para>Specifies the message about validation rules broken because of the current Property Editor's bound property.
+</para>
+            </summary>
+            <value>A string value representing the text shown in the Property Editor's tooltip when a validation rule is broken.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.Editors.WinPropertyEditor">
+
+            <summary>
+                <para>Represents a base class for Windows Forms Property Editors.
+</para>
+            </summary>
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.WinPropertyEditor.Focused">
+            <summary>
+                <para>Occurs when the Property Editor's control receives focus.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.WinPropertyEditor.KeyDown">
+            <summary>
+                <para>Occurs when a key is pressed while the Property Editor's control has focus.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.WinPropertyEditor.MouseDown">
+            <summary>
+                <para>Occurs when a mouse button is pressed while the mouse pointer is over the Property Editor's control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.WinPropertyEditor.MouseMove">
+            <summary>
+                <para>Occurs when the mouse pointer moves over the Property Editor's control area.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Win.Editors.WinPropertyEditor.TextControlHeight">
+            <summary>
+                <para>Returns the default control height in pixels. Used by XAF built-in Property Editors.
+</para>
+            </summary>
+            <returns>The height of the Property Editor's control in pixels. By default, it's set to 19.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.Editors.WinPropertyEditor.BreakLinksToControl(System.Boolean)">
+            <summary>
+                <para>Removes references to the Property Editor's control and its event handlers.
+</para>
+            </summary>
+            <param name="unwireEventsOnly">
+		<b>true</b> if event handlers should be unsubscribed only; <b>false</b>, if in addition to event unsubscription, the allocated resources should be disposed of.
+
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.WinPropertyEditor.Control">
+            <summary>
+                <para>Provides access to the control that represents the current Property Editor in a UI.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.Control"/> object used to display the current Property Editor in a UI.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.WinPropertyEditor.ControlBindingProperty">
+            <summary>
+                <para>Specifies the property of the current Property Editor's control that is used for data binding.
+</para>
+            </summary>
+            <value>A string value representing the name of the control property to bind.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Win.Editors.WinPropertyEditor.KeyUp">
+            <summary>
+                <para>Occurs when a pressed key is released while the Property Editor's control has focus.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.WinDetailViewController">
+
+            <summary>
+                <para>Inherits from the <see cref="T:DevExpress.ExpressApp.SystemModule.DetailViewController"/> to implement Windows Forms specific behavior.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Win.SystemModule.WinDetailViewController.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Win.SystemModule.WinDetailViewController"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.WinDetailViewController.SuppressConfirmation">
+            <summary>
+                <para>Indicates whether to invoke a confirmation dialog before cancelling changes.
+</para>
+            </summary>
+            <value><b>true</b> if the confirmation dialog is not invoked in the current Detail View when changes has been made to the current object; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.WinDetailViewController.SupressConfirmation">
+            <summary>
+                <para>Indicates whether to invoke a confirmation dialog before cancelling changes via the <see cref="P:DevExpress.ExpressApp.SystemModule.DetailViewController.CancelAction"/>.
+</para>
+            </summary>
+            <value><b>true</b> if the confirmation dialog is not invoked when executing the <b>Cancel</b> Action; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.WinDetailViewController.AutoCommitListView">
+            <summary>
+                <para>Specifies whether to commit changes made in the current editable List View automatically, or to use the <b>Save</b>, <b>Save and Close</b> and <b>Cancel</b> Actions manually.
+</para>
+            </summary>
+            <value><b>true</b> if the changes must be committed automatically; <b>false</b> if the <b>Save</b>, <b>Save and Close</b> and <b>Cancel</b> Action must be used.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsRibbon">
+
+            <summary>
+                <para>The RibbonOptions node allows configuring different RibbonUI settings.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsRibbon.MinimizeRibbon">
+            <summary>
+                <para>Indicates whether the Ribbon is minimized.
+</para>
+            </summary>
+            <value><b>true</b>, if the Ribbon is minimized; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsRibbon.RibbonControlStyle">
+            <summary>
+                <para>Specifies the style of the Ribbon UI when it's enabled via the <see cref="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsWin.FormStyle"/> property.
+</para>
+            </summary>
+            <value>A <b>RibbonControlStyle</b> enumeration value specifying the style of the Ribbon UI when it's enabled via the FormStyle property.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelApplicationOptionsSkin">
+
+            <summary>
+                <para>Used to extend the Application Model's <see cref="T:DevExpress.ExpressApp.Model.IModelOptions"/> node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelApplicationOptionsSkin.Skin">
+            <summary>
+                <para>Specifies the skin currently used by the Windows Forms application.
+</para>
+            </summary>
+            <value>A string specifying the the skin currently used by the Windows Forms application.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelApplicationOptionsSkin.Skins">
+            <summary>
+                <para>Specifies the possible skins that can be used by the Windows Forms application.
+</para>
+            </summary>
+            <value>A <b>List@lt;String@gt;</b> collection representing the possible skins that can be used by the Windows Forms application.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelColumnWin">
+
+            <summary>
+                <para>Used to extend the Application Model's Column node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelColumnWin.GroupSummaryFieldName">
+            <summary>
+                <para>Specifies the name of the property whose values are used for summary calculations.
+</para>
+            </summary>
+            <value>A string specifying the name of the property whose values are used for summary calculations.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelColumnWin.GroupSummarySortOrder">
+            <summary>
+                <para>Specifies the order in which group rows are sorted. 
+</para>
+            </summary>
+            <value>A <b>DevExpress.Data.ColumnSortOrder</b> object specifying the order in which group rows are sorted.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelColumnWin.GroupSummaryType">
+            <summary>
+                <para>Specifies the function that calculates a value over all records within the current column.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Model.SummaryType"/> enumeration value specifying the function that calculates a value over all records within the current column.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelLabel">
+
+            <summary>
+                <para>The Label node defines a label item which displays a text on the current layout.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelLabel.Text">
+            <summary>
+                <para><i>Localizable</i>. Specifies the label's text.
+</para>
+            </summary>
+            <value>A string specifying the label's text.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsEnableHtmlFormatting">
+
+            <summary>
+                <para>Used to extend the Application Model's Options node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsEnableHtmlFormatting.EnableHtmlFormatting">
+            <summary>
+                <para>Specifies whether the HTML formatting of UI text elements is allowed.
+</para>
+            </summary>
+            <value><b>true</b>, if the HTML formatting of UI text elements is allowed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsWin">
+
+            <summary>
+                <para>Used to extend the Application Model's Options node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsWin.FormStyle">
+            <summary>
+                <para>Specifies whether the Standard UI or Ribbon UI is used in the Windows Forms Application.
+</para>
+            </summary>
+            <value><b>RibbonFormStyle.Standard</b> when the Standard UI is used; <b>RibbonFormStyle.Ribbon</b> - if the Ribbon UI is used.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsWin.MdiDefaultNewWindowTarget">
+            <summary>
+                <para>Specifies the kind of a Window in which new Views should be invoked, when a multiple document interface is used.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.NewWindowTarget"/> enumeration value specifying the kind of a Window in which new Views should be invoked when a multiple document interface is used.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsWin.Messaging">
+            <summary>
+                <para>Specifies whether to use a common or Xtra message style.
+</para>
+            </summary>
+            <value>A string specifying whether to use a common or Xtra message style.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsWin.UIType">
+            <summary>
+                <para>Specifies the Show View Strategy (see <see cref="T:DevExpress.ExpressApp.ShowViewStrategyBase"/>) used in the Windows Forms application.
+</para>
+            </summary>
+            <value>A <b>UIType</b> enumeration value specifying the type of the UI used in the Windows Forms application.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsWin.RibbonOptions">
+            <summary>
+                <para>Provides access to the RibbonOptions child node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.Win.SystemModule.IModelOptionsRibbon"/> object representing the RibbonOptions child node.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelListViewWin">
+
+            <summary>
+                <para>Used to extend the Application Model's Views node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelListViewWin.ActiveFilterString">
+            <summary>
+                <para>Specifies the current filter criteria which represent a combination of the <see cref="T:DevExpress.ExpressApp.Win.Editors.GridListEditor"/> individual columns' filters.
+</para>
+            </summary>
+            <value>A string specifying the current filter criteria which represent a combination of the <b>GridListEditor</b> individual columns' filters.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelListViewWin.IsActiveFilterEnabled">
+            <summary>
+                <para>Specifies whether the filtering functionality is enabled.
+</para>
+            </summary>
+            <value><b>true</b>, if the filtering functionality is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerDetailViewOptions">
+
+            <summary>
+                <para>Used to extend the Application Model's DetailView node.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutItem">
+
+            <summary>
+                <para>Used to extend the Application Model's LayoutItem node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutItem.SizeConstraintsType">
+            <summary>
+                <para>Specifies the current layout item size constraints type.
+</para>
+            </summary>
+            <value>A <b>SizeConstrainsType</b> enumeration value specifying the current layout item size constraints type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutItem.TextAlignMode">
+            <summary>
+                <para>Specifies the alignment settings of the layout item's control.
+</para>
+            </summary>
+            <value>A <b>TextAlignModeItem</b> enumeration value specifying the alignment settings of the layout item's control.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutGroup">
+
+            <summary>
+                <para>Used to extend the Application Model's LayoutGroup node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutGroup.TextAlignMode">
+            <summary>
+                <para>Specifies the alignment settings of the controls displayed in the current group.
+</para>
+            </summary>
+            <value>A <b>TextAlignModeGroup</b> enumeration value specifying the alignment settings of the controls displayed in the current group.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelSeparator">
+
+            <summary>
+                <para>The SeparatorItem node defines a separator item for the current layout. Separator items allow end-users to visually separate Detail View Items at runtime.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelSplitter">
+
+            <summary>
+                <para>The Splitter node defines a splitter item for the current layout. Splitter items allow end-users to quickly resize Detail View Items at runtime.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.Editors.IModelLookupPropertyEditorSize">
+
+            <summary>
+                <para>Used to extend the Application Model's Member node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.IModelLookupPropertyEditorSize.LookupDropDownWindowHeight">
+            <summary>
+                <para>Specifies the height of the Property Editor's drop-down window.
+</para>
+            </summary>
+            <value>An integer value specifying the height of the Property Editor's drop-down window.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.Editors.IModelLookupPropertyEditorSize.LookupDropDownWindowWidth">
+            <summary>
+                <para>Specifies the width of the Property Editor's drop-down window.
+</para>
+            </summary>
+            <value>An integer value specifying the width of the Property Editor's drop-down window.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions">
+
+            <summary>
+                <para>Used to extend the Application Model Options node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions.InvisibleGroupVerticalDistance">
+            <summary>
+                <para>Specifies the vertical spacing that segregates a Layout Group with hidden text from regular Layout Groups.
+</para>
+            </summary>
+            <value>An integer value specifying the vertical spacing that segregates a Layout Group with hidden text from regular Layout Groups.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions.ItemToBorderHorizontalDistance">
+            <summary>
+                <para><para>Specifies the horizontal indents between the following layout elements:</para>
+<para>1. A Layout Group's vertical borders and the Layout Items contained in the Group. Has no effect on Layout Groups with hidden text.</para> 
+<para>2. A Layout Group's vertical borders and the Detail View's edges.</para>
+</para>
+            </summary>
+            <value>An integer value specifying the horizontal indents between layout elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions.ItemToBorderVerticalDistance">
+            <summary>
+                <para><para>Specifies the vertical indents between the following layout elements:</para>
+<para>1. A Layout Group's horizontal borders and the Layout Items contained in the Group. Has no effect on Layout Groups with hidden text.</para>
+<para>2. A Layout Group's horizontal borders and the Detail View's edges.</para>
+</para>
+            </summary>
+            <value>An integer value specifying vertical indents between the layout elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions.ItemToItemHorizontalDistance">
+            <summary>
+                <para>Specifies the horizontal spacing between adjacent Layout Items.
+</para>
+            </summary>
+            <value>An integer value specifying the horizontal spacing between adjacent Layout Items.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions.ItemToItemVerticalDistance">
+            <summary>
+                <para>Specifies the vertical spacing between adjacent Layout Items.
+</para>
+            </summary>
+            <value>An integer value specifying the vertical spacing between adjacent Layout Items.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions.ItemToTabBorderDistance">
+            <summary>
+                <para>Specifies the indents between a tabbed group's edges and Layout Items contained in the group's tabbed pages.
+</para>
+            </summary>
+            <value>An integer value specifying the indents between a tabbed group's edges and Layout Items contained in the group's tabbed pages.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions.TextAlignModeGroup">
+            <summary>
+                <para>Specifies the default alignment settings of the controls displayed in layout groups.
+</para>
+            </summary>
+            <value>An integer value specifying the default alignment settings of the controls displayed in layout groups.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions.TextAlignModeItem">
+            <summary>
+                <para>Specifies the default alignment settings of layout items' controls.
+</para>
+            </summary>
+            <value>An integer value specifying the default alignment settings of layout items' controls.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions.TextToControlDistance">
+            <summary>
+                <para>Specifies the distance between the text regions of layout items and the corresponding controls.
+</para>
+            </summary>
+            <value>An integer value specifying the distance between the text regions of layout items and the corresponding controls.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelWinLayoutManagerOptions.CustomizationEnabled">
+            <summary>
+                <para>Specifies whether an end-user can customize a Detail View Items layout on a detail form.
+</para>
+            </summary>
+            <value><b>true</b>, if an end-user can customize a Detail View Items layout on a detail form; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Win.SystemModule.IModelListViewShortcuts">
+
+            <summary>
+                <para>Used to extend the Application Model's Options node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelListViewShortcuts.FilterShortcut">
+            <summary>
+                <para>Defines the shortcut which displays the filter dropdown for the currently selected column.
+</para>
+            </summary>
+            <value>A string specifying the shortcut which displays the filter dropdown for the currently selected column.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelListViewShortcuts.GroupShortcut">
+            <summary>
+                <para>Defines the shortcut which groups or ungroups the data in the current List View by the currently selected column.
+</para>
+            </summary>
+            <value>A string specifying the shortcut which groups or ungroups the data in the current List View by the currently selected column.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelListViewShortcuts.NavigateBackShortcut">
+            <summary>
+                <para>Defines the shortcut which selects the previous column.
+</para>
+            </summary>
+            <value>A string specifying the shortcut which selects the previous column. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelListViewShortcuts.NavigateForwardShortcut">
+            <summary>
+                <para>Defines the shortcut which selects the next column.
+</para>
+            </summary>
+            <value>A string specifying the shortcut which selects the next column.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Win.SystemModule.IModelListViewShortcuts.SortShortcut">
+            <summary>
+                <para>Defines the shortcut which changes the sort mode of the currently selected column.
+</para>
+            </summary>
+            <value>A string specifying the shortcut which changes the sort mode of the currently selected column.
+</value>
+
+
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,270 @@
+﻿Version=6
+NumberOfModules=30
+Module1=actMenu
+Module2=actBookChapter
+Module3=actContent2
+Module4=Library
+Module5=SlideMenu
+Module6=actDownload
+Module7=Database
+Module8=Categories
+Module9=actHelp
+Module10=Help
+Module11=actPDF
+Module12=Starter
+Module13=actSearchBooks
+Module14=actLinks
+Module15=actPreview
+Module16=actMessage
+Module17=actBookInformation
+Module18=ProgressBar2
+Module19=DateUtils
+Module20=DBUtils
+Module21=ImageDownloader
+Module22=check_books
+Module23=ResultSearch
+Module24=actContact
+Module25=actAbout
+Module26=send_request
+Module27=BaseInformationApp
+Module28=actSummaryBook
+Module29=actSummaryContent
+Module30=actListPDF
+Build1=Default,student.templatebook
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.basic4ppc.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="14"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'SetApplicationAttribute(android:theme, "@android:style/Theme.Holo.Light")~\n~SetActivityAttribute(actcontent2, android:windowSoftInputMode, adjustResize|stateHidden)~\n~SetActivityAttribute(main,android:screenOrientation,"portrait")~\n~'SetApplicationAttribute(android:largeHeap,"true")~\n~~\n~AddApplicationText(<activity android:name="de.amberhome.objects.preferenceactivity"/>)~\n~~\n~AddPermission("android.permission.WRITE_SETTINGS")~\n~~\n~AddActivityText(ResultSearch, <intent-filter>~\n~    <action android:name="android.intent.action.SEARCH" />~\n~</intent-filter>~\n~<meta-data android:name="android.app.searchable"~\n~           android:resource="@xml/searchable"/>)~\n~~\n~AddActivityText(actMenu, <meta-data android:name="android.app.default_searchable"~\n~                   android:value=".resultsearch" />)~\n~~\n~AddPermission(android.permission.CALL_PHONE)~\n~
+IconFile=
+NumberOfFiles=58
+File1=back.png
+File2=bn.ttf
+File3=book.png
+File4=book-icon.png
+File5=bookmark.png
+File6=books.db
+File7=box.png
+File8=byekan.ttf
+File9=category.db
+File10=chapter_1.png
+File11=check_off.png
+File12=check_on.png
+File13=content_1.png
+File14=content_2.png
+File15=content_3.png
+File16=content_4.png
+File17=download_1.png
+File18=frmabout.bal
+File19=frmbookchapter.bal
+File20=frmbookinformatio.bal
+File21=frmcontact.bal
+File22=frmcontent.bal
+File23=frmdownload.bal
+File24=frmgootershow.bal
+File25=frmhelp.bal
+File26=frmlinks.bal
+File27=frmlistbooks.bal
+File28=frmmenu.bal
+File29=frmmessage.bal
+File30=frmpoints.bal
+File31=frmpreview.bal
+File32=frmsearchbooks.bal
+File33=frmsplash.bal
+File34=frmsummary.bal
+File35=frmsummary_content.bal
+File36=frmtemplate_book.bal
+File37=frmtemplate_book_list.bal
+File38=frmtemplate_box.bal
+File39=frmtemplate_progress.bal
+File40=frmtemplate_search_booklist.bal
+File41=frmteplate_category.bal
+File42=header.jpg
+File43=help_hover.png
+File44=highlight.png
+File45=icomoon.ttf
+File46=kodak.ttf
+File47=menu_1.png
+File48=menu_2.png
+File49=net.png
+File50=next_active.png
+File51=next_hover.png
+File52=no_cover.png
+File53=note.png
+File54=pdfviewer.apk
+File55=social.png
+File56=tag.png
+File57=tahoma.ttf
+File58=wooden-panels-texture.jpg
+NumberOfLibraries=32
+Library1=core
+Library2=json
+Library3=reflection
+Library4=stringutils
+Library5=picasso
+Library6=persiandate
+Library7=httputils2
+Library8=abzipunzip
+Library9=network
+Library10=slidingmenuwrapper
+Library11=sql
+Library12=ahviewpager
+Library13=byteconverter
+Library14=clipboard
+Library15=phone
+Library16=arialib
+Library17=dialogs
+Library18=javaobject
+Library19=richstring
+Library20=labelextras
+Library21=ime
+Library22=holocolorpicker
+Library23=ahpreferenceactivity
+Library24=threading
+Library25=smartstring
+Library26=teameightjustify
+Library27=rspopupmenu
+Library28=id
+Library29=splistview
+Library30=viewsetting
+Library31=slidingpanels
+Library32=randomaccessfile
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: کتابخانه
+	#VersionCode: 1
+	#VersionName: 1.0.0
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: True
+	#AdditionalRes: Y:\Documents\Programming\Basic4android\SlidingMenu-master\library\res, com.jeremyfeinstein.slidingmenu.lib
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: False
+#End Region
+
+Sub Process_Globals
+	Private tmr As Timer
+End Sub
+
+Sub Globals
+	Private lbltitle As Label
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	
+'	File.Copy(File.DirRootExternal,"bank.db",File.DirInternal & "/book/1","bank.db")
+'	File.Copy(File.DirInternal & "/book/1","bank.db",File.DirRootExternal,"bank.db")
+	
+	If Library.Manager.GetBoolean("helpfs1") = False Then
+		Activity.Finish
+		StartActivity(actHelp)
+		Return
+	End If
+	
+	Activity.LoadLayout("frmsplash")
+	lbltitle.TextColor = Colors.RGB(58, 190, 192)
+	lbltitle.SetTextColorAnimated(900,Colors.White)
+	tmr.Initialize("tmrDelay",1000)
+	tmr.Enabled = True
+	
+	StartService(check_books)
+	
+End Sub
+
+Sub Activity_Resume
+	
+	If Library.Manager.GetBoolean("offline") = True Then Return
+	If File.Exists(File.DirAssets,"default.txt") = False Then Return
+	
+	ProgressDialogShow2("در حال بارگذاری کتاب های آفلاین...",False)
+	
+	Library.Manager.SetBoolean("offline",True)
+	
+	If File.Exists(File.DirAssets,"default.ttf") = True Then
+		Library.Manager.SetString("font","default.ttf")
+	Else
+		Library.Manager.SetString("font","bn.ttf")
+	End If
+	
+	Dim res,books As List
+	res = File.ReadList(File.DirAssets,"default.txt")
+
+	books.Initialize
+	
+	For i = 0 To res.Size - 1
+		Dim rs() As String
+		rs = Regex.Split("<>",res.Get(i))
+		
+		Dim temp As Map
+		temp.Initialize
+		
+		temp.Put("sID",rs(0))
+		temp.Put("sCategoryID",rs(1))
+		temp.Put("sTitle",rs(2))
+		temp.Put("sCover",rs(3))
+		temp.Put("sAuthor",rs(4))
+		temp.Put("sRate",rs(5))
+		temp.Put("sDescription",rs(6))
+		temp.Put("sFileSize",rs(7))
+		temp.Put("sLanguage",rs(8))
+		temp.Put("sDownload",rs(9))
+		temp.Put("sPDF",rs(10))
+		temp.Put("sPublishDate",rs(11))
+		
+		books.Add(temp)
+		
+		UnzipBook(rs(0))
+		
+		
+		If File.Exists(File.Combine(File.DirInternal,"book/" & rs(0)),temp.Get("sPDF")) Then
+			File.Copy(File.Combine(File.DirInternal,"book/" & rs(0)),temp.Get("sPDF"),File.DirRootExternal,"book_" & temp.Get("sID") & ".pdf")
+		End If
+		
+	Next
+	
+	If File.Exists(File.DirInternal,"visit_book1") = False Then
+		If books.Size > 0 Then
+			Library.WriteCounterReadBook(temp.Get("sID"))
+		End If
+	End If
+			
+	Dim db As Categories
+	db.Initialize
+	db.AddBook(books)
+	
+	For j = 0 To books.Size - 1
+		Dim ta As Map
+		ta = books.Get(j)
+		Dim db1 As Categories
+		db1.Initialize
+		db1.DownloadedBook(ta.Get("sID"),"1")
+	Next
+	
+	ProgressDialogHide
+	
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+	Library.Left2RightAnimation
+End Sub
+
+Sub tmrDelay_Tick
+	
+	tmr.Enabled = False
+	Activity.Finish
+	StartActivity(actMenu)
+	
+End Sub
+
+Sub UnzipBook(ID As String)
+	
+	File.MakeDir(File.DirInternal,"book/" & ID)
+	
+	Dim zip As ABZipUnzip
+	File.Copy(File.DirAssets,"book_" & ID & ".zip",File.DirInternal,"book_" & ID & ".zip")
+	Log(zip.ABUnzip(File.Combine(File.DirInternal,"book_" & ID & ".zip"),File.Combine(File.DirInternal,"book/" & ID)))
+	File.Delete(File.DirInternal,"book_" & ID & ".zip")
+	
+	DateTime.DateFormat = "yyyy-mm-dd"
+	File.WriteString(File.DirInternal & "/book/" & ID,"date",DateTime.Date(DateTime.Now))
+				
+End Sub
